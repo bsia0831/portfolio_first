@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.faq{
+    padding-bottom: 200px;
+    .inner{
+        width: 1180px;
+
+        .left{
+            float: left;
+            width: 30%;
+            transition: all 0.5s;
+
+            ::after{
+                content: ''; display: block; clear: both;
+            }
+
+            >a{
+                display: block;
+                font: 30px/1 'Scheherazade New';
+                text-align: left;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                color: #e7dcdc;
+
+                &:nth-child(1){
+                    color: #63697988!important; 
+                }
+
+                &:nth-child(2){
+                    color: #efefef;
+                }
+
+                &:nth-child(3){
+                    color: #63697988!important; 
+                }
+
+                &:hover{
+                    color: #db6b6b!important;
+                    transition: all 0.5s!important;
+                }
+            }
+            
+        }
+
+        .right{
+            float: right;
+            width: 60%;
+            .wrap{
+                width:100%; 
+            
+                dt{
+                    width:100%; 
+                    padding: 20px 0px 10px 0;
+                    font:20px/1 'Scheherazade New'; 
+                    color:#efefef; 
+                    border-bottom:2px solid #efefef; 
+                    cursor:pointer; 
+                    transition:0.5s; 
+
+                    i{
+                        position: absolute;
+                        right: 10px;
+                        transition: all 0.5s;
+                    }
+            
+                    &.on i{
+                        transform: rotate(-180deg);
+                        transition: all 0.5s;
+                    }
+                }
+            
+                dd{
+                    width:100%; 
+                    padding:20px; 
+                    font:18px/1.3 'Scheherazade New'; 
+                    color:#efefef; 
+                    display:none; 
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

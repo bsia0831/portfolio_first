@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.join{
+    padding-top: 100px;
+}
+
+#map{
+    width: 100%;
+    height: 500px;
+
+}
+
+.branch{
+    float: right;
+    margin-top: 20px;
+
+    li{
+        float: left;
+        margin-right: 10px;
+
+        a{
+            display: block;
+            width: 200px;
+            height: 40px;
+            background: #555;
+            font: bold 12px/40px '맑은 고딕';
+            color: #fff;
+            text-align: center;
+        }
+
+        &.on{
+            a{
+                background: #aaa;
+                color: #333;
+            }
+        }
+    }
+}
+
+.traffic{
+    float: left;
+    margin-top: 20px;
+
+    li{
+        float: left;
+        margin-right: 10px;
+
+        a{
+            display: block;
+            width: 200px;
+            height: 40px;
+            background: #555;
+            font: bold 12px/40px "맑은 고딕";
+            color: #fff;
+            text-align: center;
+        }
+
+        &.on{
+            a{
+                background: #aaa;
+                color: #333;
+            }
+        }
+    }
+}

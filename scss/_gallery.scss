@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+
+.gallery{
+    width: 100%; padding: 10px;
+	transition: all .3s;
+
+    ul{
+        width: 100%;
+
+        &::after{
+            content: ""; display: block; clear: both;
+        }
+
+        li{
+            float: left;
+            width: calc(100% / 3);
+            padding: 35px 13px;
+
+            .inner{
+                width: 100%; box-sizing: border-box;
+                background: #E7A7A7;
+                border-radius: 6px;
+
+                a{
+                    display: block; width: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 230px;
+                        transition: all .3s;
+                    }
+                    &:hover img{
+                        filter: grayscale(0);
+                    }
+
+                }
+                p{
+                    font: bold 25px/1.2 'Teko'; letter-spacing: 1px;
+                    color: #efefef;
+                    margin: 15px 0;
+
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background: #efefef;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    &:hover img{
+        filter: grayscale(1);
+    }
+}
+
+.pop{
+    width:100%; height:100vh; 
+    background:rgba(0,0,0,0.8);
+    position:fixed; top:0; left:0;  
+    padding:100px; box-sizing:border-box; 
+
+    img{
+        width:100%; height:100%; object-fit:cover; 
+    }
+    span{
+        font:bold 14px/1 'Teko'; color:#fff; letter-spacing: 2px;
+        position:absolute; top:20px; right:20px; 
+        cursor:pointer; 
+    }
+
+}

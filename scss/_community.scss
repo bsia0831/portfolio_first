@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+
+.community{
+    .inner{
+        ::after{
+            content: ''; display: block; clear: both;
+        }
+
+        .left{
+            float: left;
+            width: 30%;
+            transition: all 0.5s;
+
+            a{
+                display: block;
+                font: 30px/1 'Scheherazade New';
+                text-align: left;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                color: #63697988;
+                &:nth-child(1){
+                    color: #efefef;
+                }
+                &:hover{
+                    color: #db6b6b;
+                    transition: all 0.5s;
+                }
+            }
+            
+        }
+
+        .right{
+            float: right;
+            width: 60%;
+
+            table{
+                width: 100%;
+                border-collapse: collapse;
+
+                th{
+                    padding: 15px;
+                    color: #efefef;
+                    font: normal 14px/1 'Scheherazade New';
+                    border-top: 1px solid #efefef;
+                    border-bottom: 1px solid #efefef;
+
+                    &:nth-of-type(1){
+                        width: auto;
+                    }
+
+                    &:nth-of-type(2){
+                        width: 20%;
+                    }
+                }
+
+                td{
+                    padding: 15px;
+                    border-bottom: 1px solid #efefef;
+                    font: normal 13px/1 'Scheherazade New';
+                    color: #efefef;
+                    text-decoration: none;
+
+                    a{
+                        font-size: 17px;
+                        color: #efefef;
+                        font-family: 'Scheherazade New';
+                    }
+
+                    &:nth-of-type(2){
+                        text-align: center;
+                    }
+                }
+
+                & a:hover{
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+
+            .pagination{
+                padding-top: 30px;
+                text-align: center;
+                width: 510px;
+                margin: 0 auto;
+
+                &::after{
+                    content: ''; display: block; clear: both;
+                }
+
+                .prev_double{
+                    float: left;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: #efefef;
+                    border: 1px solid #efefef;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-right: 5px;
+                }
+
+                .prev{
+                    float: left;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: #efefef;
+                    border: 1px solid #efefef;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-right: 10px;
+                }
+
+                .next{
+                    float: left;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: #efefef;
+                    border: 1px solid #efefef;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-left: 10px;
+                }
+
+                .next_double{
+                    float: left;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    color: #efefef;
+                    border: 1px solid #efefef;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-left: 5px;
+                }
+
+                .numbers{
+                    float: left;
+                    text-align: center;
+                    font-size: 0;
+
+                    a{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        font: 13px/30px 'Scheherazade New';
+                        color: #efefef;
+                        text-align: center;
+                        margin: 0 3px;
+
+                        &:nth-of-type(1){
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .search{
+            text-align: center;
+            padding-top: 20px;
+            text-align: center;
+            width: 510px;
+            margin: 0 auto;
+
+            &::placeholder{
+                color: #efefef;
+            }
+
+            input{
+                width: 100%;
+                border: 0;
+                border-bottom: 2px solid #efefef;
+                outline: 0;
+                font: normal 15px/1 '맑은 고딕';
+                color: #111;
+                padding: 7px 0;
+                box-sizing: border-box;
+                margin-left: -10px;
+                background-color: #E7A7A7;
+            }
+
+            button{
+                border: 0;
+                background: #E7A7A7;
+                margin-left: -30px;
+
+                i{
+                    color: #efefef;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0px; padding: 0;
+    font-family: 'Georama';
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline: 1;
+}
+
+.hidden{
+    display: none;
+}

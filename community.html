@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCODELAB</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <h1><a href="index.html">DCODELAB</a></h1>
+            </div>
+            <nav class="menuWeb">
+				<ul id="gnb">
+                    <li><a href="member.html">MEMBER</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+				</ul>
+				
+				<ul class="icons">
+                    <li><a href="./join.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+				</ul>
+			</nav>
+
+			<a href="#" class="btnCall">
+				<span>메뉴호출</span>
+			</a>
+
+			<nav class="menuMo">
+				<a href="#" class="closeBtn"></a>
+				<ul class="util">
+                    <li><a href="member.html">MEMBER</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+				</ul>
+
+				<ul class="icons">
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+				</ul>
+
+				<ul id="gnbMo">
+                    <li><a href="#">MEMBER</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">LOCATION</a></li>
+                    <li><a href="#">JOIN</a></li>
+				</ul>
+			</nav>
+        </div>
+    </header>
+
+	<figure id="visual_sub">
+	</figure>
+
+    <section class="content community">
+        <div class="inner">
+			<div class="left">
+				<a href="./community.html"><i class="fa-arr"></i>Community</a>
+				<a href="./faq.html">FAQ</a>
+				<a href="./contact.html">Contact</a>
+			</div>
+			<div class="right">
+				<!-- 서브페이지 컨텐츠 들어가는 부분 -->
+			<!-- 
+				게시판을 테이블로 작성
+				제목셀은 번호, 게시글 제목, 작성자, 작성일
+			-->
+			<table summary="내용, 등록일을 포함한 자유게시판">
+				<caption class="hidden">회원 자유게시판</caption>
+				<thead>
+					<tr>
+						<th scope="col">Contents</th>
+						<th scope="col">Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">Where is your jewelry made.</a></td>
+						<td>2021-08-02</td>
+					</tr>
+					<tr>
+						<td><a href="#">What is the background of the founders.</a></td>
+						<td>2021-08-02</td>
+					</tr>
+					<tr>
+						<td><a href="#">Is your jewelry certified.</a></td>
+						<td>2021-08-02</td>
+					</tr>
+					<tr>
+						<td><a href="#">Where do you buy your stones.</a></td>
+						<td>2021-07-23</td>
+					</tr>
+					<tr>
+						<td><a href="#">Are your stones ethical.</a></td>
+						<td>2021-06-24</td>
+					</tr>
+					<tr>
+						<td><a href="#">Which quality of diamond do you use.</a></td>
+						<td>2021-06-16</td>
+					</tr>
+					<tr>
+						<td><a href="#">Is your gold ethical.</a></td>
+						<td>2021-06-16</td>
+					</tr>
+					<tr>
+						<td><a href="#">Is your gold nickel-free.</a></td>
+						<td>2021-06-07</td>
+					</tr>
+					<tr>
+						<td><a href="#">What is your delivery window.</a></td>
+						<td>2021-05-25</td>
+					</tr>
+					<tr>
+						<td><a href="#">Do you accept bespoke orders.</a></td>
+						<td>2021-03-24</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="pagination">
+				<a href="#" class="prev_double"><i class="fas fa-angle-double-left"></i></a>
+				<a href="#" class="prev"><i class="fas fa-angle-left"></i></a>
+				<p class="numbers">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">4</a>
+					<a href="#">5</a>
+					<a href="#">6</a>
+					<a href="#">7</a>
+					<a href="#">8</a>
+					<a href="#">9</a>
+					<a href="#">10</a>
+				</p>
+				<a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+				<a href="#" class="next_double"><i class="fas fa-angle-double-right"></i></a>
+			</div>
+			<div class="search">
+				<input type="text" placeholder="검색">
+				<button><i class="fas fa-search"></i></button>
+			</div>
+			</div>
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <div class="logo">
+                <img src="./img/logo_gray.png" alt="logo">
+                <h1><a href="index.html">DCODELAB</a></h1>
+            </div>
+            <ul class="icons">
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        <div class="link">
+            <div class="items">
+                <h2>Company</h2>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Work Here</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="items">
+                <h2>Customer Support</h2>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Need a Repair</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="items">
+                <h2>Orders & Returns</h2>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Promotions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Store/Dealer Locator</a></li>
+                <li><a href="#">Unauthorized Dealers Alert</a></li>
+                <li><a href="#">Social Responsibility</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Do Not Sell My Personal Information</a></li>
+                <li><a href="#">Patents</a></li>
+                <li><a href="#">© DCODELAB</a></li>
+                </ul>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>
