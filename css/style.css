@@ -28,7 +28,7 @@ a {
 
 #header_sub {
   width: 100%;
-  background-color: #E7A7A7; }
+  background-color: #efefef; }
   #header_sub .inner {
     width: 1180px;
     height: 120px;
@@ -37,27 +37,22 @@ a {
     #header_sub .inner .logo {
       position: absolute;
       top: 50%;
-      left: 0px;
       transform: translateY(-50%); }
       #header_sub .inner .logo img {
         width: 50px;
-        height: 50px; }
+        height: 50px;
+        margin-top: 4px; }
       #header_sub .inner .logo > h1 a {
         position: absolute;
         top: 50%;
         left: 50px;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
         font-size: 20px;
-        color: #efefef; }
-        #header_sub .inner .logo > h1 a::after {
-          content: '';
-          border-right: 2px solid #efefef;
-          margin-left: 40px;
-          font-size: 30px; }
+        color: #111; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
       top: 50%;
-      left: 225px;
+      right: 130px;
       transform: translateY(-50%); }
       #header_sub .inner .menuWeb #gnb::after {
         content: '';
@@ -69,7 +64,7 @@ a {
           position: relative;
           display: block;
           padding: 0px 20px;
-          color: #efefef;
+          color: #111;
           font: bold 12px/1;
           transition: 0.5s; }
           #header_sub .inner .menuWeb #gnb li a::after {
@@ -80,7 +75,7 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #efefef;
+            border-bottom: 1px solid #111;
             transition: all .3s ease; }
           #header_sub .inner .menuWeb #gnb li a:hover::after {
             content: '';
@@ -90,8 +85,10 @@ a {
             display: block;
             position: absolute;
             margin-top: 2px;
-            border-bottom: 1px solid #efefef;
+            border-bottom: 1px solid #111;
             transition: all .3s ease; }
+        #header_sub .inner .menuWeb #gnb li:last-child {
+          border-right: 1px solid #111; }
     #header_sub .inner .menuWeb .icons {
       position: absolute;
       top: 50%;
@@ -107,7 +104,7 @@ a {
           display: block;
           padding: 30px 10px;
           transition: 0.5s;
-          color: #efefef; }
+          color: #111; }
           #header_sub .inner .menuWeb .icons li a i {
             font-size: 17px; }
         #header_sub .inner .menuWeb .icons li:hover a {
@@ -125,7 +122,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #efefef;
+        background: #555;
         position: absolute;
         top: 0;
         left: 0;
@@ -136,7 +133,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #efefef;
+        background: #555;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -146,7 +143,7 @@ a {
         display: block;
         width: 100%;
         height: 2px;
-        background: #efefef;
+        background: #555;
         text-indent: -9999px;
         position: absolute;
         top: 50%;
@@ -187,7 +184,7 @@ a {
           display: block;
           width: 100%;
           height: 2px;
-          background: #fff;
+          background: #f5f5f5;
           position: absolute;
           top: 0;
           left: 0;
@@ -197,7 +194,7 @@ a {
           display: block;
           width: 100%;
           height: 2px;
-          background: #fff;
+          background: #f5f5f5;
           position: absolute;
           top: 0;
           left: 0;
@@ -217,7 +214,7 @@ a {
           #header_sub .inner .menuMo .util li a {
             display: block;
             font: 13px/1 'Amiri';
-            color: #fff;
+            color: #f5f5f5;
             padding: 0 15px;
             transition: 0.5s; }
           #header_sub .inner .menuMo .util li:hover a {
@@ -237,7 +234,7 @@ a {
             display: block;
             padding: 30px 15px;
             transition: 0.5s;
-            color: #fff; }
+            color: #f5f5f5; }
             #header_sub .inner .menuMo .icons li a i {
               font-size: 22px; }
           #header_sub .inner .menuMo .icons li:hover a {
