@@ -2046,5 +2046,65 @@ section {
             font-size: 15px; }
           #footer .inner .link .items nav ul li a {
             font-size: 8px; } }
+@media screen and (max-width: 539px) {
+  #visual .inner {
+    width: 100%; }
+    #visual .inner .main_text .main_text_box > span {
+      font-size: 15px; }
+    #visual .inner .main_text .main_text_box:nth-of-type(2) {
+      font-size: 15px; }
+    #visual .inner .main_text .main_text_box:nth-of-type(3) {
+      font-size: 11px; }
+    #visual .inner .main_text .main_text_box:nth-of-type(4) {
+      font-size: 12px; }
+
+  section#brand {
+    padding: 30px; }
+    section#brand .inner .brand_img_box {
+      margin-bottom: 30px; }
+    section#brand .inner .brand_text {
+      width: 100%; }
+      section#brand .inner .brand_text .brand_text_box span {
+        font-size: 15px; }
+      section#brand .inner .brand_text .brand_text_box h1 {
+        font-size: 25px;
+        letter-spacing: 2px; }
+      section#brand .inner .brand_text .brand_text_box p {
+        font-size: 15px; }
+      section#brand .inner .brand_text .brand_text_box a {
+        width: 100%; }
+  section#history .inner .wrap article .history_text_box span {
+    font-size: 17px; }
+  section#history .inner .wrap article .history_text_box p {
+    font-size: 15px; }
+  section#crew {
+    padding: 50px 30px; }
+    section#crew .inner .crew_box .crew_text_box span {
+      font-size: 17px; }
+    section#crew .inner .crew_box .crew_text_box h3 {
+      font-size: 20px;
+      letter-spacing: 2px; }
+  section#banner .inner {
+    width: 100%; }
+  section#comment {
+    display: none; }
+
+  #footer {
+    padding: 30px; }
+    #footer .inner {
+      width: 100%; }
+      #footer .inner .logo > h1 a {
+        display: none; }
+      #footer .inner .icons li a i {
+        font-size: 15px; }
+      #footer .inner .link {
+        width: 100%;
+        padding: 50px 0; }
+        #footer .inner .link .items {
+          width: 33%; }
+          #footer .inner .link .items h2 {
+            font-size: 15px; }
+          #footer .inner .link .items nav ul li a {
+            font-size: 8px; } }
 
 /*# sourceMappingURL=style.css.map */

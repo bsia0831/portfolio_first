@@ -1306,3 +1306,151 @@ section {
         }
     }
 }
+
+@media screen and (max-width:$mobile) {
+    #visual {
+        .inner {
+            width: 100%;
+
+            .main_text {
+
+                .main_text_box {
+                    >span {
+                        font-size: 15px;
+                    }
+    
+                    &:nth-of-type(2) {
+                        font-size: 15px;
+                    }
+    
+                    &:nth-of-type(3) {
+                        font-size: 11px;
+                    }
+    
+                    &:nth-of-type(4) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+    
+        &#brand {
+            padding: 30px;
+            .inner {
+                .brand_img_box {
+                    margin-bottom: 30px;
+                }
+                .brand_text {
+                    width: 100%;
+                    .brand_text_box{
+                        span{
+                            font-size: 15px;
+                        }
+                        h1{
+                            font-size: 25px;
+                            letter-spacing: 2px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                        a{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &#history {
+            .inner {
+                .wrap {
+                    article {
+                        .history_text_box {
+                            span{
+                                font-size: 17px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        &#crew {
+            padding: 50px 30px;
+            .inner {
+                .crew_box {
+                    .crew_text_box {
+                        span{
+                            font-size: 17px;
+                        }
+                        h3{
+                            font-size: 20px;
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+        &#banner{
+            .inner{
+                width: 100%;
+            }
+        }
+    
+        &#comment{
+            display: none;
+        }
+    
+    }
+
+    #footer{
+        padding: 30px;
+        .inner {
+            width: 100%;
+            .logo {
+                >h1 a {
+                    display: none;
+                }
+            }
+    
+            .icons {
+                li {
+    
+                    a {
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+    
+            .link {
+                width: 100%;
+                padding: 50px 0;
+    
+                .items {
+                    width: 33%;
+    
+                    h2 {
+                        font-size: 15px;
+                    }
+    
+                    nav ul li {
+    
+                        a {
+                            font-size: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
