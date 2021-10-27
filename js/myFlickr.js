@@ -1,86 +1,193 @@
-$.ajax({
-    url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
-    //url:"https://www.flickr.com/services/rest/?method=flickr.interestingness.getList", 
-    dataType:"json", 
-    data:{
-        api_key:"d61e30a1010fe3e1dab106d3a2df0f21", 
-        per_page: 10, 
-        format:"json",
-        nojsoncallback:1, //json객체를 감싸고 있는 wrapping 함수를 걷어냄 
-        privacy_filter : 5, 
-        tags :"park" // 검색할 이미지 키워드 입력 - method가 photos.search일 때 (interestingnesss일때는 주석처리)
+//로딩시
+getList({
+    type: "userid",
+    user_id: "82828410@N02"
+});
+
+
+//검색창에 검색어 입력후 클릭시 
+$("#searchBox button").on("click", function () {
+
+    $("#gallery ul").removeClass("on");
+    $(".loading").removeClass("off");
+    var inputs = $("#searchBox input").val();
+    $("#searchBox input").val("");
+
+    getList({
+        type: "search",
+        tag: inputs
+    });
+});
+
+//검색어 입력후 enter 이벤트
+$(window).on("keypress", function (e) {
+    if (e.keyCode == 13) {
+
+        $("#gallery ul").removeClass("on");
+        $(".loading").removeClass("off");
+        var inputs = $("#searchBox input").val();
+        $("#searchBox input").val("");
+
+        getList({
+            type: "search",
+            tag: inputs
+        });
     }
 })
-.success(function(data){
-    console.log(data.photos.photo); 
-    let items = data.photos.photo; 
 
-    //#gallery프레임안에 ul 태그 생성 
-    $("#gallery").append("<ul>");
+//제목 클릭시 다시 초기 상태로
+$(".content h1").on("click", function () {
+    $("#gallery ul").removeClass("on");
+    $(".loading").removeClass("off");
 
-    //이미지 데이터 갯수만큼 안쪽 코드 반복 
-    $(items).each(function(index, data){
-
-        //변수 text에 이미지 데이터의 title을 담음 
-        let text = data.title; 
-        //본문 텍스트 내용이 200글자를 넘어가면 말줄임표 붙이기 
-        let len = text.length;
-        if (len > 40) {
-            txt = txt.substr(0, 40) + "..."
-        }
-        
-        //만약 해당 이미지 데이터에 제목 텍스트가 없으면 
-        if(!data.title){
-            //변수 text에 임의의 텍스트를 저장하여 추후 발생할 수 있는 오류 방지 
-            text = "No description in this photo"; 
-        }
-
-        //#gallery ul 프레임에 이미지 데이터 갯수만큼 반복을 돌면서 li 생성 
-        $("#gallery ul")
-            .append(
-                $("<li>")
-                .append(
-                    $("<div class='inner'>")
-                        //다시 자식으로 p태그 생성해서 이미지 제목 출력
-                        .append(
-                            //a태그를 만들어서 큰 이미지의 주소를 href속성에 대입
-                            $("<a>").attr({
-                                href : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"
-                            })
-                            .append(
-                                //다시 a태그안쪽에 img태그를 만들어서 작은 이미지 주소값을 대입하여 썸네일 생성 
-                                $("<img>").attr({
-                                    src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
-                                })
-                            )
-                        )
-                        .append(
-                            $("<p>").text(text)
-                        )
-                    )
-            )
+    getList({
+        type: "userid",
+        user_id: "82828410@N02"
     })
 })
-.error(function(err){
-    console.err("데이터를 호출하는데 실패했습니다"); 
-})
 
-
-//리스트의 버튼 클릭했을 때 레이어팝업으로 큰 이미지 출력하기 
-$("body").on("click", "#gallery ul li", function(e){
-    e.preventDefault(); 
-
-    let imgSrc = $(this).children("a").attr("href"); 
+//리스트 클릭시 팝업생성
+$("body").on("click", "#gallery ul li", function (e) {
+    e.preventDefault();
+    let imgSrc = $(this).find("a").attr("href");
 
     $("body").append(
         $("<div class='pop'>")
-            .append(
-                $("<img>").attr({ src : imgSrc}),
-                $("<span>").text("close")
-            )
+        .append(
+            $("<img>").attr({
+                src: imgSrc
+            }),
+            $("<span>").text("close")
+        )
     )
 });
 
-$("body").on("click", ".pop span", function(){
-    $(".pop").remove(); 
+//닫기버튼 클릭시 팝업제거
+$("body").on("click", ".pop span", function () {
+    $(".pop").remove();
 });
+
+
+function getList(opt) {
+    var result_opt = {};
+
+    if (opt.type == "interest") {
+        result_opt = {
+            url: "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList",
+            dataType: "json",
+            data: {
+                api_key: "d61e30a1010fe3e1dab106d3a2df0f21",
+                per_page: 9,
+                format: "json",
+                nojsoncallback: 1,
+                privacy_filter: 1
+            }
+        }
+    }
+
+    if (opt.type == "search") {
+        result_opt = {
+            url: "https://www.flickr.com/services/rest/?method=flickr.photos.search",
+            dataType: "json",
+            data: {
+                api_key: "d61e30a1010fe3e1dab106d3a2df0f21",
+                per_page: 9,
+                format: "json",
+                nojsoncallback: 1,
+                privacy_filter: 1,
+                tags: opt.tag
+            }
+        }
+    }
+
+    if (opt.type == "userid") {
+        result_opt = {
+            url: "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos",
+            dataType: "json",
+            data: {
+                api_key: "d61e30a1010fe3e1dab106d3a2df0f21",
+                per_page: 9,
+                format: "json",
+                nojsoncallback: 1,
+                privacy_filter: 1,
+                user_id: opt.user_id
+            }
+        }
+    }
+    $.ajax(result_opt)
+        .success(function (data) {
+            let items = data.photos.photo;
+
+            $("#gallery").empty();
+            $("#gallery").append("<ul>");
+
+            $(items).each(function (index, data) {
+                let text = data.title;
+                if (!data.title) {
+                    text = "No description in this photo";
+                }
+
+                //데이터의 갯수만큼 반복을 돌며 li의 동적요소 생성
+                $("#gallery ul")
+                    .append(
+                        $("<li>")
+                        .append(
+                            $("<div>").append(
+                                $("<a>").attr({
+                                    href: "https://live.staticflickr.com/" + data.server + "/" + data.id + "_" + data.secret + "_b.jpg"
+                                })
+                                .append(
+                                    $("<img class='thumb'>").attr({
+                                        src: "https://live.staticflickr.com/" + data.server + "/" + data.id + "_" + data.secret + "_m.jpg"
+                                    })
+                                ),
+                                $("<hr>"),
+                                $("<p>").text("Lorem, ipsum dolor."),
+                                $("<h3>").text(text),
+
+                                $("<div class='profile'>")
+                                .append(
+                                    $("<span>").text(data.owner),
+                                ),
+
+                                $("<div class='location'>")
+                                .append(
+                                    $("<span>").text("Canada"),
+                                )
+
+                            )
+                        )
+                    ) //gallery append ends       
+            });
+
+            //모든 li가 완성되고 img 요소 생성후 
+            //모든 소스이미지까지 로딩완료되면 isotope레이아웃 적용
+            const total = $("#gallery ul li").length;
+            let imgNum = 0;
+
+            $("#gallery img").each(function (index, data) {
+                data.onerror = function () {
+                    $(data).attr("src", "img/default.jpg");
+                }
+
+                data.onload = function () {
+                    imgNum++;
+
+                    if (imgNum === total) {
+                        $(".loading").addClass("off");
+
+                        new Isotope("#gallery ul", {
+                            itemSelector: "#gallery ul li",
+                            columnWidth: "#galley ul li",
+                            transitionDuration: "0.5s"
+                        });
+
+                        $("#gallery ul").addClass("on");
+                    }
+                }
+            });
+        })
+        .error(function (err) {
+            console.err("데이터를 호출하는데 실패했습니다");
+        });
+}
