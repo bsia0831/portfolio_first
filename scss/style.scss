@@ -1411,46 +1411,4 @@ section {
     
     }
 
-    #footer{
-        padding: 30px;
-        .inner {
-            width: 100%;
-            .logo {
-                >h1 a {
-                    display: none;
-                }
-            }
-    
-            .icons {
-                li {
-    
-                    a {
-                        i {
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-    
-            .link {
-                width: 100%;
-                padding: 50px 0;
-    
-                .items {
-                    width: 33%;
-    
-                    h2 {
-                        font-size: 15px;
-                    }
-    
-                    nav ul li {
-    
-                        a {
-                            font-size: 8px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }

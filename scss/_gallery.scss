@@ -173,3 +173,64 @@
     }
 
 }
+
+@media screen and (max-width:$tablet) {
+    .gallery {
+        .inner {
+            width: 100%;
+    
+            .gallery_txtbox {
+                text-align: center;
+                padding-bottom: 80px;
+    
+                p {
+                    width: 80%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                }
+            }
+    
+            #searchBox{
+                text-align: center;
+            }
+    
+            #gallery {
+                ul {
+                    li{
+                        width: calc((100%-80px)/2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    .gallery {
+        .inner {
+            .gallery_txtbox {
+                h2{
+                    font-size: 50px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+    
+            #searchBox{
+                text-align: center;
+                i{
+                    font-size: 15px;
+                }
+            }
+    
+            #gallery {
+                ul {
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
