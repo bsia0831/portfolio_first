@@ -56,52 +56,8 @@ window.onresize = ()=>{
    var active_btn = document.querySelector(".branch li.on"); 
    var active_index = active_btn.getAttribute("data-index"); 
    console.log(active_index); 
-   map.setCenter(markerOptions[active_index].latlng)
+   map.setCenter(markerOptions[0].latlng)
 }
-
-
-
-
-
-
-//교통정보 표시하기 ---------------------------------------------------
-const t_on = document.querySelectorAll(".traffic li")[0];  
-const t_off = document.querySelectorAll(".traffic li")[1]; 
-
-//교통정보 켜기 버튼 클릭시 
-t_on.addEventListener("click", function(e){
-   e.preventDefault(); 
-   // 지도에 교통정보를 표시하도록 지도타입을 추가합니다
-   map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC); 
-
-   t_on.classList.add("on"); 
-   t_off.classList.remove("on"); 
-});
-
-//교통정보 끄기 버튼 클릭시 
-t_off.addEventListener("click", function(e){
-   e.preventDefault(); 
-   // 아래 코드는 위에서 추가한 교통정보 지도타입을 제거합니다
-   map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);  
-
-   t_on.classList.remove("on"); 
-   t_off.classList.add("on"); 
-});
-
-
-
-
-// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
-const mapTypeControl = new kakao.maps.MapTypeControl();
-
-// 지도에 컨트롤을 추가해야 지도위에 표시됩니다
-// kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
-map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-
-// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
-const zoomControl = new kakao.maps.ZoomControl();
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);   
-
 
 //지도 이동 막기 
 setDraggable(true); 
