@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery.easing.1.3.js"></script>
     <script defer src="js/youtube.js"></script>
+    <script defer src="js/swiper.js"></script>
 </head>
+
 <body>
     <header id="header_sub">
         <div class="inner">
@@ -20,57 +26,154 @@
                 <h1><a href="index.html">DCODELAB</a></h1>
             </div>
             <nav class="menuWeb">
-				<ul id="gnb">
+                <ul id="gnb">
                     <li><a href="member.html">MEMBER</a></li>
                     <li><a href="community.html">COMMUNITY</a></li>
                     <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="location.html">LOCATION</a></li>
-				</ul>
-				
-				<ul class="icons">
+                </ul>
+
+                <ul class="icons">
                     <li><a href="./join.html"><i class="fas fa-user"></i></a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-				</ul>
-			</nav>
+                </ul>
+            </nav>
 
-			<a href="#" class="btnCall">
-				<span>메뉴호출</span>
-			</a>
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
 
-			<nav class="menuMo">
-				<a href="#" class="closeBtn"></a>
-				<ul class="util">
+            <nav class="menuMo">
+                <a href="#" class="closeBtn"></a>
+                <ul class="util">
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Sitemap</a></li>
-				</ul>
+                </ul>
 
-				<ul class="icons">
+                <ul class="icons">
                     <li><a href="#"><i class="fas fa-user"></i></a></li>
                     <li><a href="#"><i class="fas fa-search"></i></a></li>
                     <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-				</ul>
+                </ul>
 
-				<ul id="gnbMo">
+                <ul id="gnbMo">
                     <li><a href="member.html">MEMBER</a></li>
                     <li><a href="community.html">COMMUNITY</a></li>
                     <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="location.html">LOCATION</a></li>
                     <li><a href="join.html">JOIN</a></li>
-				</ul>
-			</nav>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="content vidGallery">
+    <figure id="visual_sub">
+        <div class="wrap">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="inner" style="background: #4932b3;">
+                        <div class="left_con">
+                            <img src="img/poster1.jpeg">
+                        </div>
+                        <div class="right_con">
+                            <h2>La La Land</h2>
+                            <p>Jazz pianist Sebastian (Ryan Gosling) and aspiring actor Mia (Emma Stone) meet in La La Land, a city of stars for dreamers. Although the two are incomplete, they begin to create the stage, the most brilliant moment of their lives, with love, hope, and passion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner" style="background: #204C78;">
+                        <div class="left_con">
+                            <img src="img/poster2.jpeg">
+                        </div>
+                        <div class="right_con">
+                            <h2>The Greatest Showman</h2>
+                            <p>P.T. Barnum, the main character of the movie, was poor as a child, became an orphan after his father, who was a tailor, died, but was imaginative, and organized a spectacular show based on fresh ideas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner" style="background: #465d61;">
+                        <div class="left_con">
+                            <img src="img/poster3.jpeg">
+                        </div>
+                        <div class="right_con">
+                            <h2>Interstellar</h2>
+                            <p>In the near future, a countdown was underway in which humanity was destroyed due to food shortages and environmental changes on a global scale. In that situation, Joseph Cooper (Mash McConnerhey), an engineer who is not welcomed in the era of his life and a former spacecraft pilot, is selected as a performer of an important mission.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner" style="background: #5c2d49;">
+                        <div class="left_con">
+                            <img src="img/poster4.jpeg">
+                        </div>
+                        <div class="right_con">
+                            <h2>Avengers: Endgame</h2>
+                            <p>Except for Tony, the remaining Avengers members, including Bruce Banner, Steve Rogers, Thor, Rocket, Natasha Romanova, and James Rod, used Thanos' Infinity Stone to find Thanos to return half of all space life, and Thanos had already used the stone to destroy it. Angry Thor cuts Thanos' neck using a storm breaker.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner" style="background: #767676;">
+                        <div class="left_con">
+                            <img src="img/poster5.jpg">
+                        </div>
+                        <div class="right_con">
+                            <h2>F9</h2>
+                            <p>Dominic (Vin Diesel) finds out that his closest brother Jacob (John Sina) is working with Cypher (Charles Theron) to make a dangerous plan to put the world in crisis, and summons the family once again to prevent it. A situation in which the closest person has become the most dangerous enemy for a moment. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 좌우버튼-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- 페이징버튼 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 재생/정지 버튼 -->
+            <ul class="auto">
+                <li class="btnStart">
+                    <i class="fas fa-play"></i>
+                </li>
+                <li class="btnStop">
+                    <i class="fas fa-pause"></i>
+                </li>
+            </ul>
+        </div>
+    </figure>
+
+
+    <section class="content youtube">
         <div class="inner">
-            <!-- 서브페이지 컨텐츠 들어가는 부분 -->
-            <div id="vidGallery"></div>
+            <div class="playlist">
+                <div class="playlist_txtbox">
+                    <h2>Romance Movie</h2>
+                </div>
+                <div class="vidGallery"></div>
+            </div>
+            <div class="playlist">
+                <div class="playlist_txtbox">
+                    <h2>Action Movie</h2>
+                </div>
+                <div class="vidGallery2"></div>
+            </div>
+            <div class="playlist">
+                <div class="playlist_txtbox">
+                    <h2>SF Movie</h2>
+                </div>
+                <div class="vidGallery3"></div>
+            </div>
         </div>
     </section>
 
@@ -87,60 +190,61 @@
                 <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
-        <div class="link">
-            <div class="items">
-                <h2>Company</h2>
-                <hr>
-                <nav>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Work Here</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Affiliate</a></li>
-                    </ul>
-                </nav>
+            <div class="link">
+                <div class="items">
+                    <h2>Company</h2>
+                    <hr>
+                    <nav>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Work Here</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Stories</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="items">
+                    <h2>Customer Support</h2>
+                    <hr>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Need a Repair</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="items">
+                    <h2>Orders & Returns</h2>
+                    <hr>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Promotions</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="items">
-                <h2>Customer Support</h2>
-                <hr>
-                <nav>
-                    <ul>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Need a Repair</a></li>
-                        <li><a href="#">Warranty</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="items">
-                <h2>Orders & Returns</h2>
-                <hr>
-                <nav>
-                    <ul>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Promotions</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="bottom">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-                <li><a href="#">Store/Dealer Locator</a></li>
-                <li><a href="#">Unauthorized Dealers Alert</a></li>
-                <li><a href="#">Social Responsibility</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Do Not Sell My Personal Information</a></li>
-                <li><a href="#">Patents</a></li>
-                <li><a href="#">© DCODELAB</a></li>
+            <div class="bottom">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Store/Dealer Locator</a></li>
+                    <li><a href="#">Unauthorized Dealers Alert</a></li>
+                    <li><a href="#">Social Responsibility</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Do Not Sell My Personal Information</a></li>
+                    <li><a href="#">Patents</a></li>
+                    <li><a href="#">© DCODELAB</a></li>
                 </ul>
+            </div>
         </div>
-    </div>
     </footer>
 
 </body>
+
 </html>
