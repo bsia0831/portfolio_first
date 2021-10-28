@@ -1,19 +1,19 @@
 getYoutube({
     frame: ".vidGallery",
-    playlist: "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd",
+    playlist: "PLY0mI6VcY3Yh5L1xHNoQnEArQHqIclH8h",
     num: 4
 });
 
 
 getYoutube({
     frame: ".vidGallery2",
-    playlist: "PLYOPkdUKSFgXiJXlCnCmIoeK_QReBgOlu",
+    playlist: "PLY0mI6VcY3YgEIbb1OqL-kiYqgKS5dZwR",
     num: 4
 })
 
 getYoutube({
     frame: ".vidGallery3",
-    playlist: "PLY0mI6VcY3Yg5TR5noLNpoNOhoK4yjtdB",
+    playlist: "PLY0mI6VcY3YhAelb2icNk03baDBXvX60H",
     num: 4
 })
 
@@ -58,7 +58,7 @@ function getYoutube(opt) {
                             })
                             .append(
                                 $("<img>").attr({
-                                    src: data.snippet.thumbnails.high.url
+                                    src: data.snippet.thumbnails.medium.url
                                 })
                             ),
                             $("<div class='con'>")
