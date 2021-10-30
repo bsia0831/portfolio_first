@@ -883,8 +883,8 @@ a {
     .values .inner .values_text {
       width: 60%; }
       .values .inner .values_text > p {
-        font: 17px/1 'Heebo';
-        margin-bottom: 20px; }
+        font: 17px/1 'Georama';
+        margin-bottom: 10px; }
       .values .inner .values_text > h2 {
         font: 40px/1.3 'Gilda Display';
         letter-spacing: 1px; }
@@ -925,6 +925,54 @@ a {
           letter-spacing: 2px; }
           .values_list .inner .wrap article .list_title h3 {
             font: bold 30px/1.3 'Georama'; }
+
+.people {
+  width: 100%;
+  padding-top: 100px; }
+  .people .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .people .inner .people_text {
+      width: 100%; }
+      .people .inner .people_text h1 {
+        font: bold 40px/1 'Gilda Display';
+        margin-bottom: 30px; }
+      .people .inner .people_text > p {
+        width: 40%;
+        font: 17px/1.4 'Georama'; }
+    .people .inner .people_photo {
+      width: 100%;
+      position: relative;
+      padding-top: 70px; }
+      .people .inner .people_photo::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .people .inner .people_photo article {
+        float: left;
+        width: 30%;
+        margin-right: 3%;
+        margin-bottom: 5%;
+        transition: all .5s; }
+        .people .inner .people_photo article .img_wrap {
+          width: 350px;
+          height: 530px;
+          margin-bottom: 20px; }
+          .people .inner .people_photo article .img_wrap img {
+            width: 100%;
+            height: 100%; }
+        .people .inner .people_photo article h4 {
+          font: normal 25px/1 'Gilda Display';
+          margin-bottom: 5px; }
+        .people .inner .people_photo article .title {
+          margin-bottom: 5px; }
+        .people .inner .people_photo article:hover h4 {
+          font-weight: bold; }
+      .people .inner .people_photo:hover article:not(:hover) {
+        filter: grayscale(1); }
+        .people .inner .people_photo:hover article:not(:hover) img {
+          filter: grayscale(0); }
 
 #visual_sub .wrap {
   width: 100%;
