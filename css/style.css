@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gudea&family=Londrina+Outline&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
@@ -875,150 +874,57 @@ a {
   .location .branch {
     display: none; }
 
-#values {
-  width: 100%;
-  padding: 100px 0;
-  background: #E7A7A7;
-  position: relative;
-  transition: all 2s; }
-  #values .inner {
-    width: 1180px;
-    margin: 0 auto; }
-    #values .inner #values_text {
-      margin-top: 0px;
-      padding-left: 50px;
-      position: relative; }
-      #values .inner #values_text h1 {
-        font: 70px/1 'Archivo Black';
-        color: #fff;
-        display: block;
-        text-align: left;
-        padding: 10px 0;
-        margin-bottom: 10px;
-        animation: fadeInLeft 1s backwards; }
-        #values .inner #values_text h1:nth-of-type(2) {
-          animation-delay: 1s; }
-        #values .inner #values_text h1:nth-of-type(3) {
-          animation-delay: 2s; }
-    #values .inner #values_list {
-      width: 100%;
-      padding-top: 120px; }
-      #values .inner #values_list .list {
-        width: 100%;
-        position: relative; }
-        #values .inner #values_list .list li {
-          height: 250px;
-          border-top: 1px solid #efefef;
-          position: relative;
-          animation: fadeInUp 2s 3s backwards; }
-          #values .inner #values_list .list li:nth-of-type(2) {
-            animation-delay: 5s; }
-          #values .inner #values_list .list li:nth-of-type(3) {
-            animation-delay: 7s; }
-          #values .inner #values_list .list li .num {
-            font: 200px/1 'Londrina Outline';
-            color: #efefef;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 25px; }
-          #values .inner #values_list .list li .left_text {
-            position: absolute;
-            font: 30px/1 'Gudea';
-            top: 50%;
-            transform: translateY(-50%);
-            left: 70px; }
-          #values .inner #values_list .list li .right_text {
-            display: block;
-            width: 560px;
-            height: 60px;
-            position: absolute;
-            font: 30px/1.2 'Gudea';
-            top: 50%;
-            transform: translateY(-50%);
-            right: 70px; }
-          #values .inner #values_list .list li:last-child {
-            border-bottom: 1px solid #efefef; }
-
-#people {
-  transition: all 3s;
-  width: 100%;
-  background: #E7A7A7;
-  padding: 0; }
-  #people.on {
-    background: #fff; }
-  #people .inner {
+.values {
+  width: 100%; }
+  .values .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 200px 0; }
-    #people .inner .people_text {
-      width: 100%;
-      height: 200px;
-      position: relative; }
-      #people .inner .people_text h1 {
-        font: 80px/1 'Archivo Black';
-        color: #333;
-        display: block;
-        position: absolute;
-        text-align: left;
-        top: 50%;
-        transform: translateY(-50%);
-        margin-bottom: 0; }
-      #people .inner .people_text p {
-        width: 60%;
-        font: 20px/1.2 'Gudea';
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0; }
-    #people .inner #people_photo {
-      width: 100%;
-      padding-top: 70px;
-      padding-bottom: 0; }
-      #people .inner #people_photo::after {
-        content: "";
+    position: relative; }
+    .values .inner .values_text {
+      width: 60%; }
+      .values .inner .values_text > p {
+        font: 17px/1 'Heebo';
+        margin-bottom: 20px; }
+      .values .inner .values_text > h2 {
+        font: 40px/1.3 'Gilda Display';
+        letter-spacing: 1px; }
+
+.values_list {
+  width: 100%; }
+  .values_list .inner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative; }
+    .values_list .inner .list_txt {
+      position: absolute;
+      width: 30%;
+      top: 0;
+      left: 0; }
+      .values_list .inner .list_txt h3 {
+        font: bold 35px/1.4 'Gilda Display'; }
+    .values_list .inner .wrap {
+      width: 82%;
+      margin-left: auto; }
+      .values_list .inner .wrap::after {
+        content: '';
         display: block;
         clear: both; }
-      #people .inner #people_photo article {
-        width: calc(100% / 3);
+      .values_list .inner .wrap article {
         float: left;
-        padding: 15px; }
-        #people .inner #people_photo article div {
-          width: 360px;
-          height: 530px;
-          overflow: hidden; }
-        #people .inner #people_photo article img {
-          width: 100%;
-          height: 100%;
-          position: relative;
-          transition: all 0.5s;
-          filter: grayscale(1); }
-          #people .inner #people_photo article img:hover {
-            filter: grayscale(0);
-            transform: scale(1.1);
-            transition: all 0.5s; }
-        #people .inner #people_photo article h4 {
-          margin-top: 15px;
-          font: bold 24px/1 'Gudea';
-          letter-spacing: 1px;
-          color: #000;
-          margin-bottom: 5px; }
-        #people .inner #people_photo article .title {
-          height: 20px;
-          font: 15px/1 'Gudea';
-          margin-bottom: 5px; }
-        #people .inner #people_photo article .location {
-          height: 20px;
-          font: 15px/1 'Gudea';
-          color: #888; }
-        #people .inner #people_photo article p {
-          font: 10px/1.2 "arial";
-          color: #777;
-          margin-bottom: 15px; }
-
-#navi {
-  display: none; }
+        width: 27%;
+        margin-right: 6%;
+        margin-bottom: 10%;
+        border-top: 1px solid #000; }
+        .values_list .inner .wrap article:first-child {
+          opacity: 0; }
+        .values_list .inner .wrap article .num {
+          margin: 25px 0;
+          font: normal 15px/1 'Heebo'; }
+        .values_list .inner .wrap article .list_title {
+          margin-bottom: 30px;
+          letter-spacing: 2px; }
+          .values_list .inner .wrap article .list_title h3 {
+            font: bold 30px/1.3 'Georama'; }
 
 #visual_sub .wrap {
   width: 100%;

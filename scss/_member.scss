@@ -1,220 +1,76 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Gudea&family=Londrina+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Text&display=swap');
 
 
-#values {
+
+.values{
     width: 100%;
-    padding: 100px 0;
-    background: #E7A7A7;
-    position: relative;
-
-    transition: all 2s;
-
-    .inner {
+    .inner{
         width: 1180px;
         margin: 0 auto;
+        position: relative;
 
-
-        #values_text {
-            margin-top: 0px;
-            padding-left: 50px;
-            position: relative;
-
-
-            h1 {
-                font: 70px/1 'Archivo Black';
-                color: #fff;
-                display: block;
-                text-align: left;
-                padding: 10px 0;
-                margin-bottom: 10px;
-                animation: fadeInLeft 1s backwards;
-
-                &:nth-of-type(2) {
-                    animation-delay: 1s;
-                }
-
-                &:nth-of-type(3) {
-                    animation-delay: 2s;
-                }
+        .values_text{
+            width: 60%;
+            >p{
+                font: 17px/1 'Heebo';
+                margin-bottom: 20px;
             }
-        }
-
-        #values_list {
-            width: 100%;
-            padding-top: 120px;
-
-            .list {
-                width: 100%;
-                position: relative;
-
-                li {
-                    height: 250px;
-                    border-top: 1px solid #efefef;
-                    position: relative;
-                    animation: fadeInUp 2s 3s backwards;
-
-                    &:nth-of-type(2) {
-                        animation-delay: 5s;
-                    }
-    
-                    &:nth-of-type(3) {
-                        animation-delay: 7s;
-                    }
-
-
-                    .num {
-                        font: 200px/1 'Londrina Outline';
-                        color: #efefef;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: 25px;
-
-                    }
-
-                    .left_text {
-                        position: absolute;
-                        font: 30px/1 'Gudea';
-                        top: 50%;
-                        transform: translateY(-50%);
-                        left: 70px;
-                    }
-
-                    .right_text {
-                        display: block;
-                        width: 560px;
-                        height: 60px;
-                        position: absolute;
-                        font: 30px/1.2 'Gudea';
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: 70px;
-                    }
-
-                    &:last-child {
-                        border-bottom: 1px solid #efefef;
-                    }
-                }
+            >h2{
+                font: 40px/1.3 'Gilda Display';
+                letter-spacing: 1px;
             }
         }
     }
 }
 
-#people {
-    transition: all 3s;
+.values_list{
     width: 100%;
-    background: #E7A7A7;
-    padding: 0;
-
-    &.on {
-        background: #fff;
-    }
-
-    .inner {
+    .inner{
         width: 1180px;
         margin: 0 auto;
-        padding: 200px 0;
+        position: relative;
 
-        .people_text {
-            width: 100%;
-            height: 200px;
-            position: relative;
+        .list_txt{
+            position: absolute;
+            width: 30%;
+            top: 0; left: 0;
 
-            h1 {
-                font: 80px/1 'Archivo Black';
-                color: #333;
-                display: block;
-                position: absolute;
-                text-align: left;
-                top: 50%;
-                transform: translateY(-50%);
-                margin-bottom: 0;
-            }
-
-            p {
-                width: 60%;
-                font: 20px/1.2 'Gudea';
-                display: block;
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                right: 0;
+            h3{
+                font: bold 35px/1.4 'Gilda Display';
             }
         }
 
-
-        #people_photo {
-            width: 100%;
-            padding-top: 70px;
-            padding-bottom: 0;
-
-            &::after {
-                content: "";
-                display: block;
-                clear: both;
+        .wrap{
+            width: 82%;
+            margin-left: auto;
+            &::after{
+                content: ''; display: block; clear: both;
             }
-
-            article {
-                width: calc(100% / 3);
+            
+            article{
                 float: left;
-                padding: 15px;
+                width: 27%;
+                margin-right: 6%;
+                margin-bottom: 10%;
+                border-top: 1px solid #000;
 
-                div {
-                    width: 360px;
-                    height: 530px;
-                    overflow: hidden;
+                &:first-child{
+                    opacity: 0;
                 }
 
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    transition: all 0.5s;
-                    filter: grayscale(1);
-
-                    &:hover {
-                        filter: grayscale(0);
-                        transform: scale(1.1);
-                        transition: all 0.5s;
+                .num{
+                    margin: 25px 0;
+                    font: normal 15px/1 'Heebo';
+                }
+                .list_title{
+                    margin-bottom: 30px;
+                    letter-spacing: 2px;
+                    h3{
+                    font: bold 30px/1.3 'Georama';
                     }
-                }
-
-                h4 {
-                    margin-top: 15px;
-                    font: bold 24px/1 'Gudea';
-                    letter-spacing: 1px;
-                    color: #000;
-                    margin-bottom: 5px;
-                }
-
-                .title {
-                    height: 20px;
-                    font: 15px/1 'Gudea';
-                    margin-bottom: 5px;
-                }
-
-                .location {
-                    height: 20px;
-                    font: 15px/1 'Gudea';
-                    color: #888;
-                }
-
-                p {
-                    font: 10px/1.2 "arial";
-                    color: #777;
-                    margin-bottom: 15px;
-
                 }
             }
         }
     }
-
-}
-
-
-#navi {
-    display: none;
 }
