@@ -1,13 +1,14 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap');
 
 .join{
+    width: 100%;
     padding-top: 50px;
     .inner{
         width: 1180px;
+        position: relative;
+        margin: 0 auto;
         h2{
-            font: 80px/1 'Heebo';
-            color: #efefef;
+            font: 80px/1 'Georama';
             margin-bottom: 80px;
             letter-spacing: 7px;
         }
@@ -15,8 +16,7 @@
         fieldset{
             border: none;
             h3{
-                font: 20px/1 'Heebo';
-                color: #efefef;
+                font: 20px/1 'Georama';
                 margin-bottom: 20px;
             }
     
@@ -24,12 +24,10 @@
                 width: 100%;
                 height: 200px;
                 resize: none;
-                padding: 5px 20px;
+                padding: 10px 20px;
                 box-sizing: border-box;
-                background-color: #E7A7A7;
-                color: #efefef;
                 margin-bottom: 10px;
-                border-color: #efefef;
+                font: 15px/1.4 'Georama';
             }
     
             .agreement{
@@ -37,36 +35,32 @@
     
                 label[for="agree"]{
                     font-size: 15px;
-                    color: #efefef;
                 }
             }
     
             table{
                 width: 100%;
-                border-top: 2px solid #efefef;
-                border-bottom: 2px solid #efefef;
+                border-top: 2px solid #111;
+                border-bottom: 2px solid #111;
                 border-collapse: collapse;
                 margin-bottom: 120px;
-                color: #efefef;
-                font: 14px/1 'Heebo';
+                font: 14px/1 'Georama';
     
                 th{
-                    width: 18%;
+                    width: 15%;
                     text-align: left;
-                    font: bold 14px/1 'Heebo';
-                    color: #efefef;
-                    background-color: #E7A7A7;
-                    border-right: 1px solid #efefef;
+                    font: bold 14px/1 'Georama';
+                    border-right: 1px solid #ccc;
                     padding: 20px 0;
                 }
     
                 td{
-                    border-bottom: 1px solid #efefef;
+                    border-bottom: 1px solid #ccc;
                     padding: 20px 30px;
                 }   
                 
                 &:last-child{
-                    border-bottom: 2px solid #efefef;
+                    border-bottom: 2px solid #ccc;
                 }
 
                 #address{
@@ -74,16 +68,16 @@
                 }
 
                 #address_btn{
-                    font: 16px/1 'Heebo'; color: #efefef;
-                    background-color: #E7A7A7;
-                    border: 1px solid #efefef;
+                    font: 16px/1 'Georama';
+                    border: 1px solid #111;
                     padding: 5px 15px;
                     cursor: pointer;	
                     transition: all 0.4s;
+                    background-color: #fff;
 
                     &:hover{
-                        color: #E7A7A7;
-                        background: #efefef;
+                        color: #fff;
+                        background-color: #111;
                     }
                 }
 
@@ -95,20 +89,21 @@
                 input[type=text], input[type=password]{
                     width: 30%;
                     height: 30px;
-                    border: 1px solid #efefef;
-                    background-color: #E7A7A7;
+                    border: 1px solid #aaa;
+                    background-color: #fff;
                     padding-left: 10px;
                     margin-right: 10px;
                     transition: all 0.4s;
-                    color: #efefef;
+                    color: #111;
 
                     &:focus{
-                        background-color: #d39797;
+                        background-color: #efefef;
                     }
                 }
     
                 input[type=checkbox], input[type=radio]{
                     margin-right: 10px;
+                    margin-top: 10px;
                 }
     
                 label{
@@ -127,18 +122,18 @@
                     width: 80%;
                     height: 100px;
                     resize: none;
-                    border: 1px solid #efefef;
-                    background-color: #E7A7A7;
+                    border: 1px solid #aaa;
+                    background-color: #fff;
                     padding: 20px;
                     box-sizing: border-box;
 
                     &::placeholder{
-                        color: #efefef;
+                        color: #aaa;
                     }
                 }
     
                 .hobbyTxt, .genderTxt{
-                    font: 12px/1 'Heebo';
+                    font: 12px/1 'Georama';
                     color: #efefef;
                     margin-top: 10px;
                     display: none;
@@ -149,23 +144,25 @@
 
         .btn_area{
             width: 100%;
-            margin: 0 420px 70px;
+            margin: 0 auto;
+            text-align: center;
 
             input[type=submit], input[type=reset]{
+                display: inline-block;
                 width: 150px;
                 height: 40px;
                 border: none;
-                background-color: #E7A7A7;
-                font: bold 14px/40px 'arial';
-                color: #efefef; 
+                background-color: #fff;
+                font: bold 14px/40px 'Georama';
+                color: #111; 
                 margin: 0 10px;
                 cursor: pointer;
-                border: 1px solid #efefef;
+                border: 1px solid #aaa;
                 transition: all 0.4s;
 
                 &:hover{
-                    color: #E7A7A7;
-                    background: #efefef;
+                    color: #fff;
+                    background: #111;
                 }
             }
         }

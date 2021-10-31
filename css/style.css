@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap");
@@ -695,84 +694,79 @@ a {
   .gallery .inner #gallery ul li {
     width: 100%; } }
 .join {
+  width: 100%;
   padding-top: 50px; }
   .join .inner {
-    width: 1180px; }
+    width: 1180px;
+    position: relative;
+    margin: 0 auto; }
     .join .inner h2 {
-      font: 80px/1 'Heebo';
-      color: #efefef;
+      font: 80px/1 'Georama';
       margin-bottom: 80px;
       letter-spacing: 7px; }
     .join .inner fieldset {
       border: none; }
       .join .inner fieldset h3 {
-        font: 20px/1 'Heebo';
-        color: #efefef;
+        font: 20px/1 'Georama';
         margin-bottom: 20px; }
       .join .inner fieldset #terms {
         width: 100%;
         height: 200px;
         resize: none;
-        padding: 5px 20px;
+        padding: 10px 20px;
         box-sizing: border-box;
-        background-color: #E7A7A7;
-        color: #efefef;
         margin-bottom: 10px;
-        border-color: #efefef; }
+        font: 15px/1.4 'Georama'; }
       .join .inner fieldset .agreement {
         margin-bottom: 70px; }
         .join .inner fieldset .agreement label[for="agree"] {
-          font-size: 15px;
-          color: #efefef; }
+          font-size: 15px; }
       .join .inner fieldset table {
         width: 100%;
-        border-top: 2px solid #efefef;
-        border-bottom: 2px solid #efefef;
+        border-top: 2px solid #111;
+        border-bottom: 2px solid #111;
         border-collapse: collapse;
         margin-bottom: 120px;
-        color: #efefef;
-        font: 14px/1 'Heebo'; }
+        font: 14px/1 'Georama'; }
         .join .inner fieldset table th {
-          width: 18%;
+          width: 15%;
           text-align: left;
-          font: bold 14px/1 'Heebo';
-          color: #efefef;
-          background-color: #E7A7A7;
-          border-right: 1px solid #efefef;
+          font: bold 14px/1 'Georama';
+          border-right: 1px solid #ccc;
           padding: 20px 0; }
         .join .inner fieldset table td {
-          border-bottom: 1px solid #efefef;
+          border-bottom: 1px solid #ccc;
           padding: 20px 30px; }
         .join .inner fieldset table:last-child {
-          border-bottom: 2px solid #efefef; }
+          border-bottom: 2px solid #ccc; }
         .join .inner fieldset table #address {
           width: 130px; }
         .join .inner fieldset table #address_btn {
-          font: 16px/1 'Heebo';
-          color: #efefef;
-          background-color: #E7A7A7;
-          border: 1px solid #efefef;
+          font: 16px/1 'Georama';
+          border: 1px solid #111;
           padding: 5px 15px;
           cursor: pointer;
-          transition: all 0.4s; }
+          transition: all 0.4s;
+          background-color: #fff; }
           .join .inner fieldset table #address_btn:hover {
-            color: #E7A7A7;
-            background: #efefef; }
+            color: #fff;
+            background-color: #111; }
         .join .inner fieldset table #address3 {
           margin-top: 10px; }
         .join .inner fieldset table input[type=text], .join .inner fieldset table input[type=password] {
           width: 30%;
           height: 30px;
-          border: 1px solid #efefef;
-          background-color: #E7A7A7;
+          border: 1px solid #aaa;
+          background-color: #fff;
           padding-left: 10px;
           margin-right: 10px;
           transition: all 0.4s;
-          color: #efefef; }
+          color: #111; }
           .join .inner fieldset table input[type=text]:focus, .join .inner fieldset table input[type=password]:focus {
-            background-color: #d39797; }
+            background-color: #efefef; }
         .join .inner fieldset table input[type=checkbox], .join .inner fieldset table input[type=radio] {
-          margin-right: 10px; }
+          margin-right: 10px;
+          margin-top: 10px; }
         .join .inner fieldset table label {
           margin-right: 30px; }
         .join .inner fieldset table select {
@@ -785,34 +779,36 @@ a {
           width: 80%;
           height: 100px;
           resize: none;
-          border: 1px solid #efefef;
-          background-color: #E7A7A7;
+          border: 1px solid #aaa;
+          background-color: #fff;
           padding: 20px;
           box-sizing: border-box; }
           .join .inner fieldset table #comments::placeholder {
-            color: #efefef; }
+            color: #aaa; }
         .join .inner fieldset table .hobbyTxt, .join .inner fieldset table .genderTxt {
-          font: 12px/1 'Heebo';
+          font: 12px/1 'Georama';
           color: #efefef;
           margin-top: 10px;
           display: none; }
     .join .inner .btn_area {
       width: 100%;
-      margin: 0 420px 70px; }
+      margin: 0 auto;
+      text-align: center; }
       .join .inner .btn_area input[type=submit], .join .inner .btn_area input[type=reset] {
+        display: inline-block;
         width: 150px;
         height: 40px;
         border: none;
-        background-color: #E7A7A7;
-        font: bold 14px/40px 'arial';
-        color: #efefef;
+        background-color: #fff;
+        font: bold 14px/40px 'Georama';
+        color: #111;
         margin: 0 10px;
         cursor: pointer;
-        border: 1px solid #efefef;
+        border: 1px solid #aaa;
         transition: all 0.4s; }
         .join .inner .btn_area input[type=submit]:hover, .join .inner .btn_area input[type=reset]:hover {
-          color: #E7A7A7;
-          background: #efefef; }
+          color: #fff;
+          background: #111; }
 
 /*tablet --------------------------------------------------*/
 @media screen and (max-width: 1179px) {
