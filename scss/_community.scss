@@ -1,50 +1,149 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
 
+.v_community{
+    width: 100%;  
+    background: url(../img/visual.jpg) 50% 60% no-repeat!important;
+    height: 35vh;
+    >h1{
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+        font-size: 50px; color: #fff; letter-spacing: 4px;
+    }
+}
 
-.community{
+.faq{
+    width: 100%;
+    padding: 70px 0;
     .inner{
-        ::after{
-            content: ''; display: block; clear: both;
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+
+        .faq_txt{
+            position: absolute;
+            top: 15px; left: 0px;
+            h2{
+                font: 70px/1 'Georama';
+                letter-spacing: 5px;
+                color: #559eff;
+            }
         }
 
-        .left{
-            float: left;
-            width: 30%;
-            transition: all 0.5s;
+        .faq_search{
+            position: relative;
+            padding-top: 30px;
+            text-align: center;
+            width: 40%;
+            margin: 0 auto;
 
-            a{
-                display: block;
-                font: 30px/1 'Scheherazade New';
-                text-align: left;
-                margin-left: 60px;
-                margin-bottom: 20px;
-                color: #63697988;
-                &:nth-child(1){
-                    color: #efefef;
-                }
-                &:hover{
-                    color: #db6b6b;
-                    transition: all 0.5s;
+            input{
+                width: 100%;
+                border: 0;
+                border-bottom: 2px solid #6fa4ee;
+                outline: 0;
+                font: normal 15px/1 'Georama';
+                color: #111;
+                box-sizing: border-box;
+                margin-left: -10px;
+                padding: 10px;
+            }
+
+            button{
+                border: 0;
+                margin-left: -30px;
+                background-color: #fff;
+
+                i{
+                    font-size: 18px;
+                    color: #6fa4ee;
                 }
             }
-            
         }
 
-        .right{
-            float: right;
-            width: 60%;
+        .wrap{
+            width: 100%;
+            position: relative;
+            padding-top: 100px;
 
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+
+            article{
+                float: left;
+                width: 23%; height: 150px; margin-right: 2%; margin-bottom: 2%;
+                background-color: #999;
+                padding: 20px; color: #fff;
+
+                h3{
+                    margin-bottom: 20px;
+                    letter-spacing: 3px;
+                }
+
+                >p{ 
+                    font: 17px/1.3 'Georama';
+                }
+
+                &:hover{
+                    background-color: #6fa4ee;
+                }
+            }
+        }
+    }
+}
+
+.community{
+    width: 100%;
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+
+        .menu{
+            width: 100%;
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+
+            ul{
+                text-align: center;
+                cursor: pointer;
+                li{
+                    border: 1px solid #aaa;
+                    float: left;
+                    width: 33%; height: 50px;
+                    font: 20px/50px 'Georama';
+                    letter-spacing: 1px;
+
+                    &:first-child{
+                        background-color: #6fa4ee;
+                        border-color: #6fa4ee;
+                        color: #fff;
+                    }
+
+                    &:hover{
+                        background-color: #6fa4ee;
+                        border-color: #6fa4ee;
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+        .table{
+            width: 100%;
+            padding-top: 60px;
             table{
                 width: 100%;
                 border-collapse: collapse;
 
                 th{
                     padding: 15px;
-                    color: #efefef;
-                    font: normal 14px/1 'Scheherazade New';
-                    border-top: 1px solid #efefef;
-                    border-bottom: 1px solid #efefef;
+                    color: #111;
+                    font: normal 16px/1 'Georama';
+                    border-top: 2px solid #111;
+                    border-bottom: 1px solid #aaa;
 
                     &:nth-of-type(1){
                         width: auto;
@@ -53,24 +152,27 @@
                     &:nth-of-type(2){
                         width: 20%;
                     }
+                    
                 }
 
                 td{
                     padding: 15px;
-                    border-bottom: 1px solid #efefef;
-                    font: normal 13px/1 'Scheherazade New';
-                    color: #efefef;
+                    border-bottom: 1px solid #aaa;
+                    font: normal 13px/1 'Georama';
+                    color: #111;
                     text-decoration: none;
 
                     a{
                         font-size: 17px;
-                        color: #efefef;
-                        font-family: 'Scheherazade New';
+                        color: #111;
+                        font-family: 'Georama';
                     }
 
                     &:nth-of-type(2){
                         text-align: center;
                     }
+                    
+                    
                 }
 
                 & a:hover{
@@ -78,6 +180,7 @@
                     font-weight: bold;
                 }
             }
+            
 
             .pagination{
                 padding-top: 30px;
@@ -94,8 +197,8 @@
                     display: block;
                     width: 30px;
                     height: 30px;
-                    color: #efefef;
-                    border: 1px solid #efefef;
+                    color: #111;
+                    border: 1px solid #111;
                     text-align: center;
                     line-height: 30px;
                     margin-right: 5px;
@@ -106,8 +209,8 @@
                     display: block;
                     width: 30px;
                     height: 30px;
-                    color: #efefef;
-                    border: 1px solid #efefef;
+                    color: #111;
+                    border: 1px solid #111;
                     text-align: center;
                     line-height: 30px;
                     margin-right: 10px;
@@ -118,8 +221,8 @@
                     display: block;
                     width: 30px;
                     height: 30px;
-                    color: #efefef;
-                    border: 1px solid #efefef;
+                    color: #111;
+                    border: 1px solid #111;
                     text-align: center;
                     line-height: 30px;
                     margin-left: 10px;
@@ -130,8 +233,8 @@
                     display: block;
                     width: 30px;
                     height: 30px;
-                    color: #efefef;
-                    border: 1px solid #efefef;
+                    color: #111;
+                    border: 1px solid #111;
                     text-align: center;
                     line-height: 30px;
                     margin-left: 5px;
@@ -146,8 +249,8 @@
                         display: inline-block;
                         width: 30px;
                         height: 30px;
-                        font: 13px/30px 'Scheherazade New';
-                        color: #efefef;
+                        font: 13px/30px 'Georama';
+                        color: #111;
                         text-align: center;
                         margin: 0 3px;
 
@@ -177,24 +280,143 @@
             input{
                 width: 100%;
                 border: 0;
-                border-bottom: 2px solid #efefef;
+                border-bottom: 2px solid #111;
                 outline: 0;
-                font: normal 15px/1 '맑은 고딕';
+                font: normal 15px/1 'Georama';
                 color: #111;
                 padding: 7px 0;
                 box-sizing: border-box;
                 margin-left: -10px;
-                background-color: #E7A7A7;
             }
 
             button{
                 border: 0;
-                background: #E7A7A7;
+                background: #fff;
                 margin-left: -30px;
 
                 i{
-                    color: #efefef;
+                    color: #111;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$tablet) {
+    
+    .faq{
+        padding: 30px;
+        .inner{
+            width: 100%;
+    
+            .faq_search{
+                padding-top: 20px;
+            }
+    
+            .wrap{
+                padding-top: 50px;
+                article{
+                    width: 48%; height: 130px;
+                    padding: 10px;
+    
+                    h3{
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .community{
+        padding: 0 30px;
+        .inner{
+            width: 100%;
+            .table{
+                width: 100%;
+                .pagination{
+                    width: 410px;
+
+                    .numbers a{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .search{
+                width: 410px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+    .faq{
+        padding: 30px;
+        .inner{
+            width: 100%;
+    
+            .faq_search{
+                padding-top: 20px;
+            }
+    
+            .wrap{
+                padding-top: 50px;
+                article{
+                    width: 48%; height: 130px;
+                    padding: 10px;
+    
+                    h3{
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .community{
+        padding: 0 30px;
+        .inner{
+            width: 100%;
+            .menu{
+                ul{
+                    li{
+                        font-size: 15px;
+                    }
+                }
+            }
+            .table{
+                width: 100%;
+
+                th{
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+
+                td{
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+
+                .pagination{
+                    width: 100%;
+
+                    .numbers a{
+                        width: 20px;
+                        height: 20px;
+
+                        &:nth-child(n+6){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .search{
+                width: 100%;
             }
         }
     }

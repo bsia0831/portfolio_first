@@ -11,8 +11,6 @@ $mobile:539px;
 @import "location.scss";
 @import "member.scss";
 @import "youtube.scss";
-@import "faq.scss";
-@import "contact.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
@@ -389,7 +387,7 @@ $mobile:539px;
     }
 }
 
-#visual {
+.visual {
     width: 100%;
     position: relative;
     background-image: url(../img/main_visual.png);
@@ -1119,7 +1117,7 @@ section {
         }
     }
 
-    #visual {
+    .visual {
         background-image: none;
         background: #ecedef;
     
@@ -1310,7 +1308,7 @@ section {
 }
 
 @media screen and (max-width:$mobile) {
-    #visual {
+    .visual {
         .inner {
             width: 100%;
 
