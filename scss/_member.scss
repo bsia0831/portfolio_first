@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Libre+Caslon+Text&display=swap');
 
 
-
 .values{
     width: 100%;
     .inner{
@@ -143,4 +142,95 @@
             }
         }
     }
+}
+
+@media screen and (max-width:$tablet) {
+    .values{
+        padding: 30px;
+        .inner{
+            width: 100%;
+            .values_text{
+                width: 100%;
+            }
+        }
+    }
+    
+    .values_list{
+        width: 100%;
+        padding: 30px;
+        .inner{
+            width: 100%;
+    
+            .list_txt{
+                display: none;
+            }
+    
+            .wrap{
+                width: 100%;
+                
+                article{
+                    width: 30%;
+                    margin-right: 3%;
+    
+                    .list_title{
+                        margin-bottom: 20px;
+                        h3{
+                            font-size: 18px;
+                        }
+                    }
+                    .list_comment{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    .people{
+        padding: 30px;
+        .inner{
+            width: 100%;
+    
+            .people_text{
+                width: 100%;
+                >p{
+                    width: 100%;
+                }
+            }
+    
+            .people_photo{
+                article{
+                    float: left;
+                    width: 45%; margin-right: 4%;
+    
+                    .img_wrap{
+                        width: 100%; height: 300px;
+                    }
+    
+                    h4{
+                        font-size: 20px;
+                    }
+
+                    .title{
+                        font-size: 12px;
+                    }
+                    .location{
+                        font-size: 10px;
+                    }
+                }
+    
+                &:hover article:not(:hover){
+                    filter: grayscale(1);
+    
+                    img{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:$mobile) {
+
 }

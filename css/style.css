@@ -1162,6 +1162,58 @@ a {
         .people .inner .people_photo:hover article:not(:hover) img {
           filter: grayscale(0); }
 
+@media screen and (max-width: 1179px) {
+  .values {
+    padding: 30px; }
+    .values .inner {
+      width: 100%; }
+      .values .inner .values_text {
+        width: 100%; }
+
+  .values_list {
+    width: 100%;
+    padding: 30px; }
+    .values_list .inner {
+      width: 100%; }
+      .values_list .inner .list_txt {
+        display: none; }
+      .values_list .inner .wrap {
+        width: 100%; }
+        .values_list .inner .wrap article {
+          width: 30%;
+          margin-right: 3%; }
+          .values_list .inner .wrap article .list_title {
+            margin-bottom: 20px; }
+            .values_list .inner .wrap article .list_title h3 {
+              font-size: 18px; }
+          .values_list .inner .wrap article .list_comment {
+            display: none; }
+
+  .people {
+    padding: 30px; }
+    .people .inner {
+      width: 100%; }
+      .people .inner .people_text {
+        width: 100%; }
+        .people .inner .people_text > p {
+          width: 100%; }
+      .people .inner .people_photo article {
+        float: left;
+        width: 45%;
+        margin-right: 4%; }
+        .people .inner .people_photo article .img_wrap {
+          width: 100%;
+          height: 300px; }
+        .people .inner .people_photo article h4 {
+          font-size: 20px; }
+        .people .inner .people_photo article .title {
+          font-size: 12px; }
+        .people .inner .people_photo article .location {
+          font-size: 10px; }
+      .people .inner .people_photo:hover article:not(:hover) {
+        filter: grayscale(1); }
+        .people .inner .people_photo:hover article:not(:hover) img {
+          filter: grayscale(0); } }
 #visual_sub .wrap {
   width: 100%;
   height: calc(100vh - 120px);
