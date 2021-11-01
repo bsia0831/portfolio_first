@@ -99,6 +99,10 @@
                     &:focus{
                         background-color: #efefef;
                     }
+
+                    &::placeholder{
+                        opacity: 0;
+                    }
                 }
     
                 input[type=checkbox], input[type=radio]{
@@ -171,35 +175,84 @@
 
 /*tablet --------------------------------------------------*/
 @media screen and (max-width:$tablet) {
-    .join{    
+    .join{
+        padding: 30px;
         .inner{
-            table{
-                th{
-                    display: none;
+            width: 100%;
 
-    
-                    &:last-child{ 
-                        display: block;
+            fieldset{
+                table{
+                    font-size: 13px;
+        
+                    th{
+                        font: bold 14px/1.4 'Georama';
+                    }
+        
+                    td{
+                        padding: 10px;
+
+                        label{
+                            display: none;
+                        }
+                    }
+        
+                    input[type=text], input[type=password]{
                         width: 100%;
+                        &::placeholder{
+                            opacity: 1;
+                        }
+                    }
+        
+                    #lbl_hobby, #lbl_gender{
+                        display: inline-block;
+                    }
+        
+                    #comments{
+                        width: 100%;
+                        padding: 10px;
+                    }
+        
+                    .hobbyTxt, .genderTxt{
+                        font: 12px/1 'Georama';
+                        color: #efefef;
+                        margin-top: 10px;
+                        display: none;
+                    }
+
+                    #address{
+                        width: 100px;
+                    }
+
+                    #lbl_agree{
+                        display: inline-block;
+                    }
+                    
+                }
+            }
+    
+            .btn_area{
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+    
+                input[type=submit], input[type=reset]{
+                    display: inline-block;
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    background-color: #fff;
+                    font: bold 14px/40px 'Georama';
+                    color: #111; 
+                    margin: 0 10px;
+                    cursor: pointer;
+                    border: 1px solid #aaa;
+                    transition: all 0.4s;
+    
+                    &:hover{
+                        color: #fff;
+                        background: #111;
                     }
                 }
-    
-                input[type=text], input[type=password]{
-                    width: 50%;
-                }
-
-                select{
-                    width: 35%;
-                }
-    
-                #comments{
-                    width: 90%;
-                }
-    
-                .hobbyTxt, .genderTxt{
-                    display: block;
-                }
-    
             }
         }
     }
@@ -207,25 +260,37 @@
 
 /*mobile --------------------------------------------------*/
 @media screen and (max-width:$mobile) {
-    .join{    
+    .join{
         .inner{
-            table{
-                input[type=submit], input[type=reset]{
-                    width: 40%;
-                    margin: 0 5%;
-                }
-    
-                input[type=text], input[type=password]{
-                    width: 100%;
-                }
+            fieldset{
+                table{
+                    td{
+                        padding: 10px;
 
-                select{
-                    width: 100%;
-                    margin-top: 10px;
+                        label{
+                            display: inline-block;
+                        }
+                    }
+        
+                    input[type=text], input[type=password]{
+                        &::placeholder{
+                            opacity: 0;
+                        }
+                    }
+
+                    #address{
+                        width: 70px;
+                        &:nth-child(2){
+                            display: none;
+                        }
+                    }
                 }
+            }
     
-                #comments{
-                    width: 100%;
+            .btn_area{
+    
+                input[type=submit], input[type=reset]{
+                    width: 120px;
                 }
             }
         }

@@ -82,21 +82,21 @@
                         <tr>
                             <th scope="row"><label for="email">E-mail</label></th>
                             <td>
-                                <input type="text" name="email" id="email" required>
+                                <input type="text" name="email" id="email" required placeholder="Enter your email address to use as login ID">
                                 <label for="email">Enter your email address to use as login ID</label>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="userid">USER ID</label></th>
                             <td>
-                                <input type="text" name="userid" id="userid">
+                                <input type="text" name="userid" id="userid" placeholder="ID must be between 4 and 16 characters and contain lowercase letters and numbers.">
                                 <label for="userid">ID must be between 4 and 16 characters and contain lowercase letters and numbers.</label>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="pwd">PASSWORD</label></th>
                             <td>
-                                <input type="password" name="pwd" id="pwd" required>
+                                <input type="password" name="pwd" id="pwd" required placeholder="Password must be between 8 and 16 characters and contain at least two of the following.">
                                 <label for="pwd">Password must be between 8 and 16 characters and contain at least two of the following.</label>
                             </td>
                         </tr>
@@ -137,16 +137,16 @@
                             <th scope="row"><label for="sms_agree">SMS Service</label></th>
                             <td>
                                 <label for="sms_agree" id="lbl_agree">Sign-up for SMS alert to receive the latest updates and special offers.</label><br>
-                                <input type="radio" name="sms_agree" id="sms_agree"><label>Yes</label>
-                                <input type="radio" name="sms_agree" id="sms_agree"><label>No</label>
+                                <input type="radio" name="sms_agree" id="sms_agree"><span>Yes</span>
+                                <input type="radio" name="sms_agree" id="sms_agree"><span>No</span>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="email_agree">E-mail Service</label></th>
                             <td id="agreement">
                                 <label for="email_agree" id="lbl_agree">Sign-up for SMS alert to receive the latest updates and special offers.</label><br>
-                                <input type="radio" name="email_agree" id="email_agree"><label>Yes</label>
-                                <input type="radio" name="email_agree" id="email_agree"><label>No</label>
+                                <input type="radio" name="email_agree" id="email_agree"><span>Yes</span>
+                                <input type="radio" name="email_agree" id="email_agree"><span>No</span>
                             </td>
                         </tr>
                     </table>
@@ -164,13 +164,13 @@
                         <tr>
                             <th scope="row">HOBBY</th>
                             <td>
-                                <label for="reading">
+                                <label for="reading" id="lbl_hobby">
                                     <input type="checkbox" name="hobby" id="reading" value="reading">READING
                                 </label>
-                                <label for="music">
+                                <label for="music" id="lbl_hobby">
                                     <input type="checkbox" name="hobby" id="music" value="musci">MUSIC
                                 </label>
-                                <label for="game">
+                                <label for="game" id="lbl_hobby">
                                     <input type="checkbox" name="hobby" id="game" value="game">GAME
                                 </label>
                                 <p class="hobbyTxt">취미를 선택해주세요.</p>
@@ -179,10 +179,10 @@
                         <tr>
                             <th scope="row">GENDER</th>
                             <td>
-                                <label for="male">
+                                <label for="male" id="lbl_gender">
                                     <input type="radio" name="gender" id="male" value="male">MALE
                                 </label>
-                                <label for="female">
+                                <label for="female" id="lbl_gender">
                                     <input type="radio" name="gender" id="female" value="female">FEMALE
                                 </label>
                                 <p class="genderTxt">성별을 선택해주세요.</p>
