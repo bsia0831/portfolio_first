@@ -23,6 +23,7 @@
 				position: relative;
 				top: 50%;
 				margin-top: -150px;
+				transition: all .5s;
 
 
 
@@ -99,6 +100,29 @@
 						.con {
 							position: relative;
 							z-index: 10;
+						}
+					}
+
+					.youtube{
+						position: absolute;
+						top: 0; left: 0;
+						width: 100%; height: 100%;
+						opacity: 0;
+
+						iframe{
+							width: 100%; height: 100%;
+						}
+					}
+
+					&:hover{
+						.youtube{
+							opacity: 1;
+						}
+
+						.left_con{
+							img{
+								opacity: 0;
+							}
 						}
 					}
 				}
