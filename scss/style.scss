@@ -1001,10 +1001,7 @@ section {
             width: 100%;
 
             .logo {
-                left: 20px;
-                >h1 a::after {
-                    display: none;
-                }
+                left: 30px;
             }
 
             .menuWeb {
@@ -1023,93 +1020,114 @@ section {
     }
 
     .visual {
-        background-image: none;
-        background: #ecedef;
+        background-color: #f3e4d9;
+        height: calc(100vh - 120px);
     
         .inner {
-            width: 100%;
-            #popup {
+            .main-visual-left{
                 display: none;
             }
+            .main-visual-right{
+                width: 100%;
     
-            .main_text {
-                left: 30px;
-    
-                .main_text_box {
-                    &:nth-of-type(1) {
-                        font-size: 20px;
+                .right_txtbox{
+                    width: 100%; padding: 70px;
+                    >p{
+                        font: 30px/1 'Ephesis'; color: #C28D72;
+                        padding: 10px;
                     }
     
-                    &:nth-of-type(2) {
-                        font-size: 23px;
+                    h1{
+                        font: 50px/1.3 'Fraunces'; color: #fff;
                     }
-    
-                    &:nth-of-type(3) {
-                        font-size: 15px;
-                    }
-    
-                    &:nth-of-type(4) {
-                        width: 150px;
-                        font-size: 15px;
+
+                    a{
+                        margin: 50px 0;
                     }
                 }
+            }
+    
+            >img{
+                display: none;
             }
         }
     }
 
     section {
+        padding: 30px;
+    
+        .inner {
+            width: 100%;
+        }
+    
         &#news {
+            padding-top: 70px;
             .inner {
-                width: 100%;
-                .wrap {
-                    article {
-                        width: 100%;
+                h2{
+                    font: 37px/1.4 'Fraunces'; color: #DFB8A2;
+                    margin-bottom: 50px;
+                }
+                p{
+                    width: 90%;
+                    font-size: 13px;
+                }
+                .btn_box{
+                    a{
+                        width: 150px;
                     }
                 }
             }
         }
     
         &#brand {
-            padding: 50px;
             .inner {
                 width: 100%;
-                .brand_img_box {
-                    width: 100%;
-                    padding: 0;
-                    margin-bottom: 50px;
-                }
+                .wrap{
+                    article{
+                        padding: 20px;
     
-                .brand_text {
-                    width: 100%;
+                        h3{
+                            font-size: 15px;
+                            margin: 50px 0;
+                        }
+    
+                        p{
+                            display: none;
+                        }
+    
+                        a{
+                            display: none;
+                        }
+                    }
                 }
             }
         }
     
         &#history {
-            padding: 30px 0;
-    
-            .inner {
-                width: 100%;
-                .wrap {
-                    width: 100%;
-    
-                    &::after {
-                        content: '';
-                        display: block;
-                        clear: both;
+            padding-top: 110px;
+            .inner{
+                .history_txt{
+                    h3{
+                        left: 10px;
                     }
+                    ul{
+                        display: none;
+                    }
+                }
     
-                    article {
-                        padding: 0;
-                        i {
-                            float: none;
-                            display: none;
-                        }
-    
-                        .history_text_box {
-                            float: none;
-                            width: 100%;
-                            text-align: center;
+                .wrap{
+                    article{
+                        .over{
+                            h3{
+                                font-size: 13px;
+                            }
+                            p{
+                                letter-spacing: 2px;
+                                margin-bottom: 28px;
+                            }
+                            h4{
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
@@ -1117,55 +1135,27 @@ section {
         }
     
         &#crew {
-            padding: 100px 50px;
-            .inner {
-                width: 100%;
-    
-                .crew_box {
-                    width: 100%;
-                    text-align: center;
-                    padding-right: 0;
-    
-                    .crew_img_box {
-                        display: none;
-                    }
-    
-                    .crew_text_box {
+            .inner{
+                .wrap{
+                    article{
                         float: none;
                         width: 100%;
-                        margin-bottom: 50px;
-                    }
+                        padding: 0;
     
-                    &:nth-of-type(1) {
-                        p {
-                            padding-right: 0px;
-                        }
-                    }
-    
-                    &:nth-of-type(2) {
-                        padding-left: 0px;
-                    }
-    
-                    &:nth-of-type(3) {
-                        p {
-                            padding-right: 0px;
+                        &:nth-child(1){
+                            border-right: none;
+                            border-bottom: 2px solid #C28D72;
+                            margin-bottom: 50px;
+                            padding-bottom: 50px;
                         }
                     }
                 }
-    
-    
             }
         }
+    
         &#banner{
-            .inner{
-                width: 100%;
-            }
+            height: 300px;
         }
-    
-        &#comment{
-            display: none;
-        }
-    
     }
 
     #footer{
@@ -1215,25 +1205,12 @@ section {
 @media screen and (max-width:$mobile) {
     .visual {
         .inner {
-            width: 100%;
-
-            .main_text {
-
-                .main_text_box {
-                    >span {
-                        font-size: 15px;
-                    }
+            .main-visual-right{
+                .right_txtbox{
+                    padding: 20px;
     
-                    &:nth-of-type(2) {
-                        font-size: 15px;
-                    }
-    
-                    &:nth-of-type(3) {
-                        font-size: 11px;
-                    }
-    
-                    &:nth-of-type(4) {
-                        font-size: 12px;
+                    h1{
+                        font-size: 50px;
                     }
                 }
             }
@@ -1241,79 +1218,34 @@ section {
     }
 
     section {
+        padding: 20px;
     
         &#brand {
-            padding: 30px;
             .inner {
-                .brand_img_box {
-                    margin-bottom: 30px;
-                }
-                .brand_text {
-                    width: 100%;
-                    .brand_text_box{
-                        span{
-                            font-size: 15px;
-                        }
-                        h1{
-                            font-size: 25px;
-                            letter-spacing: 2px;
-                        }
-                        p{
-                            font-size: 15px;
-                        }
-                        a{
-                            width: 100%;
-                        }
+                .wrap{
+                    article{
+                        height: 160px;
                     }
                 }
             }
         }
     
         &#history {
-            .inner {
-                .wrap {
-                    article {
-                        .history_text_box {
-                            span{
-                                font-size: 17px;
-                            }
-                            p{
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    
-        &#crew {
-            padding: 50px 30px;
-            .inner {
-                .crew_box {
-                    .crew_text_box {
-                        span{
-                            font-size: 17px;
-                        }
-                        h3{
-                            font-size: 20px;
-                            letter-spacing: 2px;
-                        }
-                    }
-                }
-    
-    
-            }
-        }
-        &#banner{
             .inner{
-                width: 100%;
+                .wrap{
+                    article{
+                        .over{
+                            h3{
+                                display: none;
+                            }
+                            h4{
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
-    
-        &#comment{
-            display: none;
-        }
-    
     }
 
 }
