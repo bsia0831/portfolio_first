@@ -47,7 +47,8 @@
 }
 
 .contact {
-    padding-bottom: 200px;
+    position: relative;
+    width: 100%;
     .inner {
         width: 1180px;
         position: relative;
@@ -61,12 +62,11 @@
         }
 
         .left {
-            float: left;
             width: 30%;
             transition: all 0.5s;
 
             h3{
-                font: bold 30px/1 'Georama';
+                font: bold 40px/1 'Georama';
             }
 
         }
