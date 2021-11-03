@@ -1,40 +1,191 @@
 @charset "utf-8";
 
-.location{
+.location {
     padding-top: 0px;
-    #map{
+
+    #map {
         width: 100%;
         height: 500px;
         position: relative;
         filter: grayscale(1);
 
-        .map_txtbox{
+        .map_txtbox {
             z-index: 10;
             position: absolute;
-            width: 250px; height: 100%;
-            top: 0; left: 9%;
+            width: 250px;
+            height: 100%;
+            top: 0;
+            left: 9%;
             background-color: #111;
             padding: 30px;
             text-align: center;
             color: #fff;
             letter-spacing: 3px;
-            h2{
+
+            h2 {
                 font-weight: bold;
                 font-size: 20px;
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 font-size: 13px;
                 margin-bottom: 30px;
                 line-height: 1.3;
             }
-            h3{
+
+            h3 {
                 font-weight: bold;
                 margin-bottom: 5px;
             }
         }
     }
-    .branch{
+
+    .branch {
         display: none;
+    }
+}
+
+.contact {
+    padding-bottom: 200px;
+    .inner {
+        width: 1180px;
+        position: relative;
+        margin: 0 auto;
+
+
+        ::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .left {
+            float: left;
+            width: 30%;
+            transition: all 0.5s;
+
+            h3{
+                font: bold 30px/1 'Georama';
+            }
+
+        }
+
+        .right {
+            float: right;
+            width: 60%;
+            margin-top: -35px;
+
+            .wrap {
+                width: 100%;
+
+                .form_group {
+                    position: relative;
+                    padding: 25px 100px 0;
+                    margin-top: 10px;
+                    width: 100%;
+
+                    .form_field {
+                        font-family: 'Scheherazade New';
+                        width: 100%;
+                        border: 0;
+                        border-bottom: 2px solid #111;
+                        outline: 0;
+                        font-size: 1.3rem;
+                        color: #111;
+                        padding: 7px 0;
+                        background: transparent;
+                        transition: border-color 0.2s;
+
+                        &::placeholder {
+                            color: transparent;
+                        }
+
+                        &:placeholder-shown ~ .form_label{
+                            font-size: 25px;
+                            cursor: text;
+                            top: 20px;
+                            font-family: 'Scheherazade New';
+                        }
+
+                        &:focus {
+                            ~.form_label {
+                                position: absolute;
+                                top: 0;
+                                display: block;
+                                transition: 0.2s;
+                                font-size: 20px;
+                                color: #4657ee;
+                                font-weight: 700;
+                            }
+
+                            padding-bottom: 6px;
+                            font-weight: 700;
+                            border-width: 3px;
+                            border-image: linear-gradient(to right, #4657ee, #4657ee);
+                            border-image-slice: 1;
+                        }
+
+                        &:required, &:invalid {
+                            box-shadow: none;
+                        }
+                    }
+
+                    .form_label {
+                        position: absolute;
+                        top: 0;
+                        display: block;
+                        transition: 0.2s;
+                        font-size: 20px;
+                        color: #111;
+                        font-family: 'Scheherazade New';
+                    }
+
+                    .submit{
+                        position: relative;
+                        padding: 20px 219px;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        outline: none;
+                        font-size: 28px;
+                        color: #111;
+                        font-family: 'Scheherazade New';
+
+                        &::after, &::before{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #111;
+                            transition: all 0.3s ease;
+                        }
+
+                        &:hover{
+                            color: #4657ee;
+                            &::before{
+                                top: 0;
+                                transform: scale(1);
+                                background-color: #4657ee;
+                            }
+
+                            &::after{
+                                transform: scale(1);
+                                background-color: #4657ee;
+                            }
+                        }
+
+
+                    }
+                }
+                
+
+
+
+            }
+        }
     }
 }

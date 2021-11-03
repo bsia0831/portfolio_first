@@ -1062,6 +1062,105 @@ a {
   .location .branch {
     display: none; }
 
+.contact {
+  padding-bottom: 200px; }
+  .contact .inner {
+    width: 1180px;
+    position: relative;
+    margin: 0 auto; }
+    .contact .inner ::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .contact .inner .left {
+      float: left;
+      width: 30%;
+      transition: all 0.5s; }
+      .contact .inner .left h3 {
+        font: bold 30px/1 'Georama'; }
+    .contact .inner .right {
+      float: right;
+      width: 60%;
+      margin-top: -35px; }
+      .contact .inner .right .wrap {
+        width: 100%; }
+        .contact .inner .right .wrap .form_group {
+          position: relative;
+          padding: 25px 100px 0;
+          margin-top: 10px;
+          width: 100%; }
+          .contact .inner .right .wrap .form_group .form_field {
+            font-family: 'Scheherazade New';
+            width: 100%;
+            border: 0;
+            border-bottom: 2px solid #111;
+            outline: 0;
+            font-size: 1.3rem;
+            color: #111;
+            padding: 7px 0;
+            background: transparent;
+            transition: border-color 0.2s; }
+            .contact .inner .right .wrap .form_group .form_field::placeholder {
+              color: transparent; }
+            .contact .inner .right .wrap .form_group .form_field:placeholder-shown ~ .form_label {
+              font-size: 25px;
+              cursor: text;
+              top: 20px;
+              font-family: 'Scheherazade New'; }
+            .contact .inner .right .wrap .form_group .form_field:focus {
+              padding-bottom: 6px;
+              font-weight: 700;
+              border-width: 3px;
+              border-image: linear-gradient(to right, #4657ee, #4657ee);
+              border-image-slice: 1; }
+              .contact .inner .right .wrap .form_group .form_field:focus ~ .form_label {
+                position: absolute;
+                top: 0;
+                display: block;
+                transition: 0.2s;
+                font-size: 20px;
+                color: #4657ee;
+                font-weight: 700; }
+            .contact .inner .right .wrap .form_group .form_field:required, .contact .inner .right .wrap .form_group .form_field:invalid {
+              box-shadow: none; }
+          .contact .inner .right .wrap .form_group .form_label {
+            position: absolute;
+            top: 0;
+            display: block;
+            transition: 0.2s;
+            font-size: 20px;
+            color: #111;
+            font-family: 'Scheherazade New'; }
+          .contact .inner .right .wrap .form_group .submit {
+            position: relative;
+            padding: 20px 219px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            outline: none;
+            font-size: 28px;
+            color: #111;
+            font-family: 'Scheherazade New'; }
+            .contact .inner .right .wrap .form_group .submit::after, .contact .inner .right .wrap .form_group .submit::before {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #111;
+              transition: all 0.3s ease; }
+            .contact .inner .right .wrap .form_group .submit:hover {
+              color: #4657ee; }
+              .contact .inner .right .wrap .form_group .submit:hover::before {
+                top: 0;
+                transform: scale(1);
+                background-color: #4657ee; }
+              .contact .inner .right .wrap .form_group .submit:hover::after {
+                transform: scale(1);
+                background-color: #4657ee; }
+
 .values {
   width: 100%; }
   .values .inner {
