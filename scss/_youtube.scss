@@ -344,24 +344,24 @@
 						transition: 0.5s;
 
 						h2 {
-							font: bold 14px/1 "맑은 고딕", "arial";
+							font: bold 14px/1 "맑은 고딕", "Georama";
 							color: #fff;
 							margin-bottom: 15px;
 							transition: 0.5s;
 							cursor: pointer;
 
 							&:hover {
-								color: #837dcf;
+								color: #C28D72;
 							}
 						}
 
 						p {
-							font: 11px/1.2 "맑은 고딕", "arial";
+							font: 11px/1.2 "맑은 고딕", "Georama";
 							color: #ddd;
 						}
 
 						span {
-							font: bold 12px/1 "arial";
+							font: bold 12px/1 "Georama";
 							color: orange;
 							position: absolute;
 							bottom: 20px;

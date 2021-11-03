@@ -395,7 +395,8 @@ a {
 .v_community {
   width: 100%;
   background: url(../img/visual.jpg) 50% 60% no-repeat !important;
-  height: 35vh; }
+  height: 35vh;
+  position: relative; }
   .v_community > h1 {
     position: absolute;
     top: 50%;
@@ -416,10 +417,6 @@ a {
       position: absolute;
       top: 15px;
       left: 0px; }
-      .faq .inner .faq_txt h2 {
-        font: 70px/1 'Georama';
-        letter-spacing: 5px;
-        color: #559eff; }
     .faq .inner .faq_search {
       position: relative;
       padding-top: 30px;
@@ -429,7 +426,7 @@ a {
       .faq .inner .faq_search input {
         width: 100%;
         border: 0;
-        border-bottom: 2px solid #6fa4ee;
+        border-bottom: 2px solid #C28D72;
         outline: 0;
         font: normal 15px/1 'Georama';
         color: #111;
@@ -442,7 +439,7 @@ a {
         background-color: #fff; }
         .faq .inner .faq_search button i {
           font-size: 18px;
-          color: #6fa4ee; }
+          color: #C28D72; }
     .faq .inner .wrap {
       width: 100%;
       position: relative;
@@ -457,7 +454,7 @@ a {
         height: 150px;
         margin-right: 2%;
         margin-bottom: 2%;
-        background-color: #999;
+        background-color: #bbb;
         padding: 20px;
         color: #fff; }
         .faq .inner .wrap article h3 {
@@ -466,7 +463,7 @@ a {
         .faq .inner .wrap article > p {
           font: 17px/1.3 'Georama'; }
         .faq .inner .wrap article:hover {
-          background-color: #6fa4ee; }
+          background-color: #C28D72; }
 
 .community {
   width: 100%; }
@@ -491,12 +488,12 @@ a {
           font: 20px/50px 'Georama';
           letter-spacing: 1px; }
           .community .inner .menu ul li:first-child {
-            background-color: #6fa4ee;
-            border-color: #6fa4ee;
+            background-color: #dda485;
+            border-color: #dda485;
             color: #fff; }
           .community .inner .menu ul li:hover {
-            background-color: #6fa4ee;
-            border-color: #6fa4ee;
+            background-color: #dda485;
+            border-color: #dda485;
             color: #fff; }
     .community .inner .table {
       width: 100%;
@@ -718,13 +715,14 @@ a {
         font: 15px/1 'Georama';
         transition: all .6s ease;
         cursor: pointer;
-        color: #111;
-        border-bottom: 1px solid #111; }
+        color: #C28D72;
+        border-bottom: 1px solid #C28D72; }
       .gallery .inner #searchBox .search_btn {
         background: none;
         border: none;
         outline: none;
-        font-size: 20px; }
+        font-size: 20px;
+        color: #C28D72; }
     .gallery .inner .loading {
       width: 100px;
       height: 100px;
@@ -1020,137 +1018,90 @@ a {
       display: none; }
   .join .inner .btn_area input[type=submit], .join .inner .btn_area input[type=reset] {
     width: 120px; } }
+.point {
+  padding-bottom: 0; }
+  .point .inner h1 {
+    font: 40px/1 'Fraunces';
+    margin-bottom: 120px; }
+  .point .inner ul {
+    width: 100%;
+    cursor: pointer; }
+    .point .inner ul::after {
+      content: '';
+      display: block;
+      clear: both; }
+    .point .inner ul li {
+      padding: 20px 0;
+      float: left;
+      width: 33.333%;
+      text-align: center;
+      border-top: 2px solid #aaa; }
+      .point .inner ul li p {
+        font: 25px/1 'Inconsolata';
+        color: #aaa; }
+      .point .inner ul li:first-child {
+        border-color: #BE8464; }
+        .point .inner ul li:first-child p {
+          color: #BE8464 !important; }
+
 .location {
-  padding-top: 0px; }
+  padding-top: 0px;
+  padding-bottom: 0; }
   .location #map {
     width: 100%;
     height: 500px;
     position: relative;
     filter: grayscale(1); }
-    .location #map .map_txtbox {
-      z-index: 10;
-      position: absolute;
-      width: 250px;
-      height: 100%;
-      top: 0;
-      left: 9%;
-      background-color: #111;
-      padding: 30px;
-      text-align: center;
-      color: #fff;
-      letter-spacing: 3px; }
-      .location #map .map_txtbox h2 {
-        font-weight: bold;
-        font-size: 20px;
-        margin-bottom: 20px; }
-      .location #map .map_txtbox p {
-        font-size: 13px;
-        margin-bottom: 30px;
-        line-height: 1.3; }
-      .location #map .map_txtbox h3 {
-        font-weight: bold;
-        margin-bottom: 5px; }
-  .location .branch {
+  .location .inner .branch {
     display: none; }
 
 .contact {
-  position: relative;
-  width: 100%; }
-  .contact .inner {
-    width: 1180px;
-    position: relative;
-    margin: 0 auto; }
-    .contact .inner ::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .contact .inner .left {
-      width: 30%;
-      transition: all 0.5s; }
-      .contact .inner .left h3 {
-        font: bold 40px/1 'Georama'; }
-    .contact .inner .right {
-      float: right;
-      width: 60%;
-      margin-top: -35px; }
-      .contact .inner .right .wrap {
-        width: 100%; }
-        .contact .inner .right .wrap .form_group {
-          position: relative;
-          padding: 25px 100px 0;
-          margin-top: 10px;
-          width: 100%; }
-          .contact .inner .right .wrap .form_group .form_field {
-            font-family: 'Scheherazade New';
-            width: 100%;
-            border: 0;
-            border-bottom: 2px solid #111;
-            outline: 0;
-            font-size: 1.3rem;
-            color: #111;
-            padding: 7px 0;
-            background: transparent;
-            transition: border-color 0.2s; }
-            .contact .inner .right .wrap .form_group .form_field::placeholder {
-              color: transparent; }
-            .contact .inner .right .wrap .form_group .form_field:placeholder-shown ~ .form_label {
-              font-size: 25px;
-              cursor: text;
-              top: 20px;
-              font-family: 'Scheherazade New'; }
-            .contact .inner .right .wrap .form_group .form_field:focus {
-              padding-bottom: 6px;
-              font-weight: 700;
-              border-width: 3px;
-              border-image: linear-gradient(to right, #4657ee, #4657ee);
-              border-image-slice: 1; }
-              .contact .inner .right .wrap .form_group .form_field:focus ~ .form_label {
-                position: absolute;
-                top: 0;
-                display: block;
-                transition: 0.2s;
-                font-size: 20px;
-                color: #4657ee;
-                font-weight: 700; }
-            .contact .inner .right .wrap .form_group .form_field:required, .contact .inner .right .wrap .form_group .form_field:invalid {
-              box-shadow: none; }
-          .contact .inner .right .wrap .form_group .form_label {
-            position: absolute;
-            top: 0;
-            display: block;
-            transition: 0.2s;
-            font-size: 20px;
-            color: #111;
-            font-family: 'Scheherazade New'; }
-          .contact .inner .right .wrap .form_group .submit {
-            position: relative;
-            padding: 20px 219px;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            outline: none;
-            font-size: 28px;
-            color: #111;
-            font-family: 'Scheherazade New'; }
-            .contact .inner .right .wrap .form_group .submit::after, .contact .inner .right .wrap .form_group .submit::before {
-              content: '';
-              display: block;
-              position: absolute;
-              top: 100%;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background-color: #111;
-              transition: all 0.3s ease; }
-            .contact .inner .right .wrap .form_group .submit:hover {
-              color: #4657ee; }
-              .contact .inner .right .wrap .form_group .submit:hover::before {
-                top: 0;
-                transform: scale(1);
-                background-color: #4657ee; }
-              .contact .inner .right .wrap .form_group .submit:hover::after {
-                transform: scale(1);
-                background-color: #4657ee; }
+  background-color: #F2E6D8; }
+  .contact .inner h1 {
+    width: 100%;
+    text-align: left;
+    font: 60px/1 'Inconsolata';
+    margin-bottom: 70px; }
+  .contact .inner::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .contact .inner .contact_left {
+    float: left;
+    width: 60%;
+    border: 2px solid #fff; }
+    .contact .inner .contact_left ul {
+      width: 100%;
+      padding: 30px; }
+      .contact .inner .contact_left ul li {
+        width: 100%;
+        margin-bottom: 20px; }
+        .contact .inner .contact_left ul li input {
+          width: 100%;
+          height: 50px;
+          border: none;
+          padding: 10px; }
+        .contact .inner .contact_left ul li textarea {
+          width: 100%;
+          resize: none;
+          border: none;
+          padding: 10px; }
+        .contact .inner .contact_left ul li a {
+          margin-bottom: 0px; }
+  .contact .inner .contact_right {
+    float: left;
+    width: 40%; }
+    .contact .inner .contact_right ul {
+      width: 100%;
+      padding: 100px; }
+      .contact .inner .contact_right ul li h3 {
+        font: 30px/1 'Inconsolata';
+        margin-bottom: 15px;
+        letter-spacing: 2px; }
+      .contact .inner .contact_right ul li p {
+        font: 20px/1 'Inconsolata';
+        margin-bottom: 50px;
+        letter-spacing: 2px; }
 
 .values {
   width: 100%; }
@@ -1536,7 +1487,7 @@ a {
             .youtube .inner .playlist .vidGallery article .con h2,
             .youtube .inner .playlist .vidGallery2 article .con h2,
             .youtube .inner .playlist .vidGallery3 article .con h2 {
-              font: bold 14px/1 "맑은 고딕", "arial";
+              font: bold 14px/1 "맑은 고딕", "Georama";
               color: #fff;
               margin-bottom: 15px;
               transition: 0.5s;
@@ -1544,16 +1495,16 @@ a {
               .youtube .inner .playlist .vidGallery article .con h2:hover,
               .youtube .inner .playlist .vidGallery2 article .con h2:hover,
               .youtube .inner .playlist .vidGallery3 article .con h2:hover {
-                color: #837dcf; }
+                color: #C28D72; }
             .youtube .inner .playlist .vidGallery article .con p,
             .youtube .inner .playlist .vidGallery2 article .con p,
             .youtube .inner .playlist .vidGallery3 article .con p {
-              font: 11px/1.2 "맑은 고딕", "arial";
+              font: 11px/1.2 "맑은 고딕", "Georama";
               color: #ddd; }
             .youtube .inner .playlist .vidGallery article .con span,
             .youtube .inner .playlist .vidGallery2 article .con span,
             .youtube .inner .playlist .vidGallery3 article .con span {
-              font: bold 12px/1 "arial";
+              font: bold 12px/1 "Georama";
               color: orange;
               position: absolute;
               bottom: 20px;
