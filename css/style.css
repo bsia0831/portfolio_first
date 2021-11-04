@@ -1161,7 +1161,7 @@ a {
 
 .people {
   width: 100%;
-  padding-top: 100px; }
+  padding-top: 50px; }
   .people .inner {
     width: 1180px;
     margin: 0 auto;
@@ -1170,7 +1170,8 @@ a {
       width: 100%; }
       .people .inner .people_text h1 {
         font: bold 40px/1 'Gilda Display';
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        color: #BE8464; }
       .people .inner .people_text > p {
         width: 40%;
         font: 17px/1.4 'Georama'; }
