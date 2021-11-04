@@ -1043,6 +1043,10 @@ a {
         border-color: #BE8464; }
         .point .inner ul li:first-child p {
           color: #BE8464 !important; }
+      .point .inner ul li:hover {
+        border-color: #BE8464; }
+        .point .inner ul li:hover p {
+          color: #BE8464 !important; }
 
 .location {
   padding-top: 0px;
