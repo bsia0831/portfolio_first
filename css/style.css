@@ -692,7 +692,8 @@ a {
     position: relative; }
     .gallery .inner .gallery_txtbox {
       text-align: center;
-      padding-bottom: 80px; }
+      padding-bottom: 80px;
+      animation: fadeIn 2s forwards; }
       .gallery .inner .gallery_txtbox h2 {
         font: bold 70px/1 'Georama';
         margin-bottom: 50px; }
