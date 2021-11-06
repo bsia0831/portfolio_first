@@ -1666,7 +1666,7 @@ a {
   animation: fadeIn 2s forwards; }
   #header .inner {
     width: 1180px;
-    height: 120px;
+    height: 100px;
     margin: 0 auto;
     position: relative; }
     #header .inner .logo {
@@ -1683,9 +1683,8 @@ a {
         color: #BE8263; }
     #header .inner .menuWeb #gnb {
       position: absolute;
-      top: 50%;
-      right: 50px;
-      transform: translateY(-50%); }
+      bottom: 0;
+      right: 50px; }
       #header .inner .menuWeb #gnb::after {
         content: '';
         display: block;
@@ -1693,9 +1692,10 @@ a {
       #header .inner .menuWeb #gnb li {
         float: left; }
         #header .inner .menuWeb #gnb li a {
+          height: 60px;
           position: relative;
           display: block;
-          padding: 0px 20px;
+          padding: 0px 40px;
           color: #111;
           font: bold 12px/1;
           transition: 0.5s; }
@@ -1722,41 +1722,43 @@ a {
           #header .inner .menuWeb #gnb li a:hover {
             color: #BE8263; }
         #header .inner .menuWeb #gnb li .sub {
-          width: 1180px;
+          width: 40%;
           height: 300px;
           position: absolute;
-          top: 51px;
-          right: 0;
+          top: 60px;
+          right: -10px;
           background: #fff;
-          display: none; }
+          display: none;
+          padding: 10px;
+          border-top: 2px solid #8f431d; }
           #header .inner .menuWeb #gnb li .sub .left {
-            width: 30%;
+            width: 50%;
             height: 100%;
-            background: lightgreen;
-            float: left; }
+            background: url(../img/sub5.jpg) no-repeat center/cover;
+            float: left;
+            padding: 7px;
+            color: #fff; }
           #header .inner .menuWeb #gnb li .sub .right {
-            width: 70%;
+            width: 50%;
             height: 100%;
             background: #fff;
             float: right; }
-          #header .inner .menuWeb #gnb li .sub::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            background: lightgreen; }
-          #header .inner .menuWeb #gnb li .sub::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            background: inherit; }
+        #header .inner .menuWeb #gnb li .mem {
+          right: 590px; }
+          #header .inner .menuWeb #gnb li .mem .left {
+            background-image: url(../img/sub6.jpg); }
+        #header .inner .menuWeb #gnb li .com {
+          right: 440px; }
+          #header .inner .menuWeb #gnb li .com .left {
+            background-image: url(../img/sub7.jpg); }
+        #header .inner .menuWeb #gnb li .you {
+          right: 280px; }
+          #header .inner .menuWeb #gnb li .you .left {
+            background-image: url(../img/sub8.jpg); }
+        #header .inner .menuWeb #gnb li .gal {
+          right: 130px; }
+          #header .inner .menuWeb #gnb li .gal .left {
+            background-image: url(../img/sub10.jpg); }
     #header .inner .menuWeb .icons {
       position: absolute;
       top: 50%;
@@ -1946,7 +1948,6 @@ a {
       background: #b9b9b9; }
       .visual .inner #popup .popup_content {
         width: 100%;
-        min-height: 270px;
         text-align: center; }
         .visual .inner #popup .popup_content > i {
           font-size: 50px;

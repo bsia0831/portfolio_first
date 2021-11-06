@@ -105,7 +105,7 @@ $mobile:539px;
 
     .inner {
         width: 1180px;
-        height: 120px;
+        height: 100px;
         margin: 0 auto;
         position: relative;
 
@@ -129,10 +129,8 @@ $mobile:539px;
         .menuWeb {
             #gnb {
                 position: absolute;
-                top: 50%;
+                bottom: 0;
                 right: 50px;
-                transform: translateY(-50%);
-
                 &::after {
                     content: '';
                     display: block;
@@ -143,9 +141,10 @@ $mobile:539px;
                     float: left;
 
                     a {
+                        height: 60px;
                         position: relative;
                         display: block;
-                        padding: 0px 20px;
+                        padding: 0px 40px;
                         color: #111;
                         font: bold 12px/1;
                         transition: 0.5s;
@@ -182,35 +181,59 @@ $mobile:539px;
                     }
 
                     .sub{
-                        width:1180px; 
+                        width:40%; 
                         height:300px; 
-                        position:absolute;  top:51px; 
-                        right:0;   
+                        position:absolute;  
+                        top:60px; 
+                        right:-10px;   
                         background:#fff; 
                         display:none; 
+                        padding: 10px;
+                        border-top: 2px solid #8f431d;
+
+                        
+
 
                         .left{
-                            width:30%; height:100%; 
-                            background:lightgreen; 
+                            width:50%; height:100%; 
+                            background: url(../img/sub5.jpg) no-repeat center/cover;
                             float:left; 
+                            padding: 7px; color: #fff;
                         }
                         .right{
-                            width:70%; height:100%; 
+                            width:50%; height:100%; 
                             background:#fff; 
-                            float:right; 
-                        }
-                        &::before{
-                            content:''; display:block; 
-                            width:100%; height:100%; 
-                            position:absolute; top:0; left:-100%; background:lightgreen; 
-                        }
-                        &::after{
-                            content:''; display:block; 
-                            width:100%; height:100%; 
-                            position:absolute; top:0; right:-100%; 
-                            background:inherit; 
+                            float:right;
                         }
                         
+                    }
+
+                    .mem{
+                        right: 590px;
+                        .left{
+                            background-image: url(../img/sub6.jpg);
+                        }
+                    }
+
+                    .com{
+                        right: 440px;
+                        .left{
+                            background-image: url(../img/sub7.jpg);
+                        }
+                    }
+
+                    .you{
+                        right: 280px;
+                        .left{
+                            background-image: url(../img/sub8.jpg);
+                        }
+                    }
+
+                    .gal{
+                        right: 130px;
+                        .left{
+                            background-image: url(../img/sub10.jpg);
+                        }
                     }
                 }
             }
@@ -474,7 +497,6 @@ $mobile:539px;
 
             .popup_content {
                 width: 100%;
-                min-height: 270px;
                 text-align: center;
 
                 >i {
