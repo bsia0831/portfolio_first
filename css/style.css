@@ -25,10 +25,14 @@ a {
 #header_sub {
   width: 100%;
   background-color: #fff;
-  border-bottom: 2px solid #F2E6D8; }
+  border-bottom: 2px solid #bea291;
+  overflow: visible;
+  z-index: 99;
+  position: relative;
+  animation: fadeIn 2s forwards; }
   #header_sub .inner {
     width: 1180px;
-    height: 120px;
+    height: 100px;
     margin: 0 auto;
     position: relative; }
     #header_sub .inner .logo {
@@ -45,9 +49,8 @@ a {
         color: #BE8263; }
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
-      top: 50%;
-      right: 50px;
-      transform: translateY(-50%); }
+      bottom: 0;
+      right: 50px; }
       #header_sub .inner .menuWeb #gnb::after {
         content: '';
         display: block;
@@ -55,9 +58,10 @@ a {
       #header_sub .inner .menuWeb #gnb li {
         float: left; }
         #header_sub .inner .menuWeb #gnb li a {
+          height: 60px;
           position: relative;
           display: block;
-          padding: 0px 20px;
+          padding: 0px 40px;
           color: #111;
           font: bold 12px/1;
           transition: 0.5s; }
@@ -83,6 +87,44 @@ a {
             transition: all .3s ease; }
           #header_sub .inner .menuWeb #gnb li a:hover {
             color: #BE8263; }
+        #header_sub .inner .menuWeb #gnb li .sub {
+          width: 40%;
+          height: 300px;
+          position: absolute;
+          top: 60px;
+          right: -10px;
+          background: #fff;
+          display: none;
+          padding: 10px;
+          border-top: 2px solid #8f431d; }
+          #header_sub .inner .menuWeb #gnb li .sub .left {
+            width: 50%;
+            height: 100%;
+            background: url(../img/sub5.jpg) no-repeat center/cover;
+            float: left;
+            padding: 7px;
+            color: #fff; }
+          #header_sub .inner .menuWeb #gnb li .sub .right {
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            float: right; }
+        #header_sub .inner .menuWeb #gnb li .mem {
+          right: 590px; }
+          #header_sub .inner .menuWeb #gnb li .mem .left {
+            background-image: url(../img/sub6.jpg); }
+        #header_sub .inner .menuWeb #gnb li .com {
+          right: 440px; }
+          #header_sub .inner .menuWeb #gnb li .com .left {
+            background-image: url(../img/sub7.jpg); }
+        #header_sub .inner .menuWeb #gnb li .you {
+          right: 280px; }
+          #header_sub .inner .menuWeb #gnb li .you .left {
+            background-image: url(../img/sub8.jpg); }
+        #header_sub .inner .menuWeb #gnb li .gal {
+          right: 130px; }
+          #header_sub .inner .menuWeb #gnb li .gal .left {
+            background-image: url(../img/sub10.jpg); }
     #header_sub .inner .menuWeb .icons {
       position: absolute;
       top: 50%;

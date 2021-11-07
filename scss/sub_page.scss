@@ -4,11 +4,15 @@
 #header_sub {
     width: 100%;
     background-color: #fff;
-    border-bottom: 2px solid #F2E6D8;
+    border-bottom: 2px solid #bea291;
+    overflow: visible;
+    z-index: 99;
+    position: relative;
+    animation: fadeIn 2s forwards;
 
     .inner {
         width: 1180px;
-        height: 120px;
+        height: 100px;
         margin: 0 auto;
         position: relative;
 
@@ -32,10 +36,8 @@
         .menuWeb {
             #gnb {
                 position: absolute;
-                top: 50%;
+                bottom: 0;
                 right: 50px;
-                transform: translateY(-50%);
-
                 &::after {
                     content: '';
                     display: block;
@@ -46,9 +48,10 @@
                     float: left;
 
                     a {
+                        height: 60px;
                         position: relative;
                         display: block;
-                        padding: 0px 20px;
+                        padding: 0px 40px;
                         color: #111;
                         font: bold 12px/1;
                         transition: 0.5s;
@@ -82,6 +85,62 @@
                         }
 
 
+                    }
+
+                    .sub{
+                        width:40%; 
+                        height:300px; 
+                        position:absolute;  
+                        top:60px; 
+                        right:-10px;   
+                        background:#fff; 
+                        display:none; 
+                        padding: 10px;
+                        border-top: 2px solid #8f431d;
+
+                        
+
+
+                        .left{
+                            width:50%; height:100%; 
+                            background: url(../img/sub5.jpg) no-repeat center/cover;
+                            float:left; 
+                            padding: 7px; color: #fff;
+                        }
+                        .right{
+                            width:50%; height:100%; 
+                            background:#fff; 
+                            float:right;
+                        }
+                        
+                    }
+
+                    .mem{
+                        right: 590px;
+                        .left{
+                            background-image: url(../img/sub6.jpg);
+                        }
+                    }
+
+                    .com{
+                        right: 440px;
+                        .left{
+                            background-image: url(../img/sub7.jpg);
+                        }
+                    }
+
+                    .you{
+                        right: 280px;
+                        .left{
+                            background-image: url(../img/sub8.jpg);
+                        }
+                    }
+
+                    .gal{
+                        right: 130px;
+                        .left{
+                            background-image: url(../img/sub10.jpg);
+                        }
                     }
                 }
             }
