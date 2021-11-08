@@ -1151,19 +1151,22 @@ a {
         letter-spacing: 2px; }
 
 .values {
-  width: 100%; }
+  width: 100%;
+  background-image: url(../img/member_banner.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
   .values .inner {
     width: 1180px;
     margin: 0 auto;
     position: relative; }
     .values .inner .values_text {
-      width: 60%; }
-      .values .inner .values_text > p {
-        font: 17px/1 'Georama';
-        margin-bottom: 10px; }
+      width: 100%; }
       .values .inner .values_text > h2 {
-        font: 40px/1.3 'Gilda Display';
-        letter-spacing: 1px; }
+        font: bold 50px/1 'Fraunces';
+        letter-spacing: 1px;
+        color: #BE8464;
+        text-align: center; }
 
 .values_list {
   width: 100%; }
