@@ -548,6 +548,7 @@ $mobile:539px;
             height: 100%;
             position: relative;
             background-color: #f3e4d9;
+            display: none;
             
             >h2{
                 z-index: 99;
@@ -561,7 +562,8 @@ $mobile:539px;
             float: left;
             width: 50%;
             position: relative;
-            height: 100%;
+            height: 100%;            display: none;
+
 
             .right_txtbox{
                 width: 40%;
@@ -584,13 +586,66 @@ $mobile:539px;
         }
 
         .visual_img{
-            display: block;
+            display: none;
             z-index: 1;
             width: 400px; height: 450px;
             position: absolute;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             object-fit: cover;
+        }
+
+        .list{
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+            background: #eccdbc;
+
+            .swiper {
+                width: 80%;
+                height: 70%;
+                position: absolute;
+                top: 55%; left: 50%;
+                transform: translate(-50%, -50%);
+
+                .swiper-slide{
+                    text-align: center;
+                    font-size: 18px;
+                    background: #eccdbc;
+        
+                    /* Center slide text vertically */
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    -webkit-align-items: center;
+                    align-items: center;
+
+                    img{
+                        position: absolute;
+                        top: 0;left: 0;
+                        width: 100%;
+                        height: 70%;
+                    }
+
+                    h3{
+                        font: 20px/1 'Fraunces'; color: #111;
+                        position: absolute;
+                        width: 100%;
+                        top: 75%;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #000;
+                    }
+                }
+            }
         }
 
     }
