@@ -41,3 +41,28 @@ $("#gnb>li").each(function(index){
         $("#gnb>li").eq(index).find(".sub").hide(); 
     })
 })
+
+
+//DOM Caching
+var listCall = document.querySelector(".transition_btn"); 
+
+var visual = document.querySelector(".main-visual"); 
+
+var list = document.querySelector(".list"); 
+
+var list_img = document.querySelector("img"); 
+
+
+listCall.onclick = function(e){
+    e.preventDefault(); 
+
+    visual.classList.add("on"); 
+    list.classList.add("on"); 
+}
+
+list_img.onclick = function(e){
+    e.preventDefault(); 
+
+    visual.classList.remove("on"); 
+    list.classList.remove("on"); 
+}

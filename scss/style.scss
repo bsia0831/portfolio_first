@@ -101,7 +101,6 @@ $mobile:539px;
     overflow: visible;
     z-index: 99;
     position: relative;
-    animation: fadeIn 2s forwards;
 
     .inner {
         width: 1180px;
@@ -478,9 +477,7 @@ $mobile:539px;
         margin: 0 auto;
         position: relative;
 
-        &::after{
-            content: ''; display: block; clear: both;
-        }
+
 
         
         #popup {
@@ -542,66 +539,92 @@ $mobile:539px;
             }
         }
 
-        .main-visual-left{
-            float: left;
-            width: 50%;
+        .main-visual{
+            width: 100%;
             height: 100%;
+            margin: 0 auto;
             position: relative;
-            background-color: #f3e4d9;
-            display: none;
-            
-            >h2{
-                z-index: 99;
-                display: block; position: absolute;
-                font: bold 80px/1.3 'Inconsolata'; color: #fff;
-                top: 50%; left: 30%; transform: translateY(-50%);
+            &::after{
+                content: ''; display: block; clear: both;
             }
-        }
-        .main-visual-right{
-            z-index: 2;
-            float: left;
-            width: 50%;
-            position: relative;
-            height: 100%;            display: none;
 
+            &.on{
+                display: none;
+                animation: fadeInUp 1s both;
+            }
 
-            .right_txtbox{
-                width: 40%;
-                display: block;
+            .main-visual-left{
+                float: left;
+                width: 50%;
+                height: 100%;
+                position: relative;
+                background-color: #f3e4d9;
+                
+                >h2{
+                    z-index: 99;
+                    display: block; position: absolute;
+                    font: bold 80px/1.3 'Inconsolata'; color: #fff;
+                    top: 50%; left: 30%; transform: translateY(-50%);
+                    animation: fadeIn 1s both;
+                }
+            }
+            .main-visual-right{
+                z-index: 2;
+                float: left;
+                width: 50%;
+                position: relative;
+                height: 100%;
+    
+    
+                .right_txtbox{
+                    width: 40%;
+                    display: block;
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    animation: fadeIn 1s both;
+                    animation-delay: .4s;
+                    >p{
+                        font: 20px/1 'Inconsolata'; color: #111;
+                        margin-bottom: 20px;
+                    }
+    
+                    h1{
+                        font: 15px/1.3 'Fraunces'; color: #111;
+                    }
+    
+                    a{
+                        margin-left: 0;
+                    }
+                }
+            }
+            .visual_img{
+                z-index: 1;
+                width: 400px; height: 450px;
                 position: absolute;
                 top: 50%; left: 50%;
-                >p{
-                    font: 20px/1 'Inconsolata'; color: #111;
-                    margin-bottom: 20px;
-                }
-
-                h1{
-                    font: 15px/1.3 'Fraunces'; color: #111;
-                }
-
-                a{
-                    margin-left: 0;
-                }
+                transform: translate(-50%, -50%);
+                object-fit: cover;
+                animation: fadeIn 1s both;
+                animation-delay: .8s;
             }
         }
 
-        .visual_img{
-            display: none;
-            z-index: 1;
-            width: 400px; height: 450px;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
+
+
 
         .list{
-            z-index: 99;
+            display: none;
             width: 100%;
             height: 100%;
             position: relative;
             margin: 0 auto;
-            background: #eccdbc;
+            background: #f3e4d9;
+            transition: all .4s;
+
+
+            &.on{
+                display: block;
+            }
 
             .swiper {
                 width: 80%;
@@ -613,7 +636,7 @@ $mobile:539px;
                 .swiper-slide{
                     text-align: center;
                     font-size: 18px;
-                    background: #eccdbc;
+                    background: #f3e4d9;
         
                     /* Center slide text vertically */
                     display: -webkit-box;
@@ -629,12 +652,27 @@ $mobile:539px;
                     -webkit-align-items: center;
                     align-items: center;
 
+                    animation: fadeInUp 1s both;
+
+                    &:nth-of-type(2){
+                        animation-delay: .5s;
+                    }
+
+                    &:nth-of-type(3){
+                        animation-delay: .8s;
+                    }
+
+                    &:nth-of-type(4){
+                        animation-delay: 1.3s;
+                    }
+
                     img{
                         position: absolute;
                         top: 0;left: 0;
                         width: 100%;
                         height: 70%;
                         cursor: pointer;    
+                        object-fit: cover;
                     }
 
                     h3{
