@@ -4,7 +4,7 @@ const $boxs = $(".myScroll");
 const $btns = $("#navi li");
 const $bg = $("#brand");
 let len = $btns.length; //4 
-let baseLine = -10;
+let baseLine = -200;
 
 /*
 baseLine : 
