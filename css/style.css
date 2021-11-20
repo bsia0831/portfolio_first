@@ -28,8 +28,7 @@ a {
   border-bottom: 2px solid #bea291;
   overflow: visible;
   z-index: 99;
-  position: relative;
-  animation: fadeIn 2s forwards; }
+  position: relative; }
   #header_sub .inner {
     width: 1180px;
     height: 100px;
@@ -50,7 +49,7 @@ a {
     #header_sub .inner .menuWeb #gnb {
       position: absolute;
       bottom: 0;
-      right: 50px; }
+      left: 25%; }
       #header_sub .inner .menuWeb #gnb::after {
         content: '';
         display: block;
@@ -61,7 +60,7 @@ a {
           height: 60px;
           position: relative;
           display: block;
-          padding: 0px 40px;
+          padding: 0px 30px;
           color: #111;
           font: bold 12px/1;
           transition: 0.5s; }
@@ -110,15 +109,15 @@ a {
             background: #fff;
             float: right; }
         #header_sub .inner .menuWeb #gnb li .mem {
-          right: 590px; }
+          right: 520px; }
           #header_sub .inner .menuWeb #gnb li .mem .left {
             background-image: url(../img/sub6.jpg); }
         #header_sub .inner .menuWeb #gnb li .com {
-          right: 440px; }
+          right: 380px; }
           #header_sub .inner .menuWeb #gnb li .com .left {
             background-image: url(../img/sub7.jpg); }
         #header_sub .inner .menuWeb #gnb li .you {
-          right: 280px; }
+          right: 240px; }
           #header_sub .inner .menuWeb #gnb li .you .left {
             background-image: url(../img/sub8.jpg); }
         #header_sub .inner .menuWeb #gnb li .gal {
@@ -1729,7 +1728,7 @@ a {
     #header .inner .menuWeb #gnb {
       position: absolute;
       bottom: 0;
-      right: 50px; }
+      left: 25%; }
       #header .inner .menuWeb #gnb::after {
         content: '';
         display: block;
@@ -1740,7 +1739,7 @@ a {
           height: 60px;
           position: relative;
           display: block;
-          padding: 0px 40px;
+          padding: 0px 30px;
           color: #111;
           font: bold 12px/1;
           transition: 0.5s; }
@@ -1789,15 +1788,15 @@ a {
             background: #fff;
             float: right; }
         #header .inner .menuWeb #gnb li .mem {
-          right: 590px; }
+          right: 520px; }
           #header .inner .menuWeb #gnb li .mem .left {
             background-image: url(../img/sub6.jpg); }
         #header .inner .menuWeb #gnb li .com {
-          right: 440px; }
+          right: 380px; }
           #header .inner .menuWeb #gnb li .com .left {
             background-image: url(../img/sub7.jpg); }
         #header .inner .menuWeb #gnb li .you {
-          right: 280px; }
+          right: 240px; }
           #header .inner .menuWeb #gnb li .you .left {
             background-image: url(../img/sub8.jpg); }
         #header .inner .menuWeb #gnb li .gal {

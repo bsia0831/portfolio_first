@@ -129,7 +129,7 @@ $mobile:539px;
             #gnb {
                 position: absolute;
                 bottom: 0;
-                right: 50px;
+                left: 25%;
                 &::after {
                     content: '';
                     display: block;
@@ -143,7 +143,7 @@ $mobile:539px;
                         height: 60px;
                         position: relative;
                         display: block;
-                        padding: 0px 40px;
+                        padding: 0px 30px;
                         color: #111;
                         font: bold 12px/1;
                         transition: 0.5s;
@@ -208,21 +208,21 @@ $mobile:539px;
                     }
 
                     .mem{
-                        right: 590px;
+                        right: 520px;
                         .left{
                             background-image: url(../img/sub6.jpg);
                         }
                     }
 
                     .com{
-                        right: 440px;
+                        right: 380px;
                         .left{
                             background-image: url(../img/sub7.jpg);
                         }
                     }
 
                     .you{
-                        right: 280px;
+                        right: 240px;
                         .left{
                             background-image: url(../img/sub8.jpg);
                         }
