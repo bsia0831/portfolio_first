@@ -106,11 +106,9 @@ $mobile:539px;
     
 
     .inner {
-        width: 1180px;
+        width: 100%;
         height: 100px;
-        margin: 0 auto;
         position: relative;
-
 
         .logo {
             position: absolute;
@@ -121,18 +119,21 @@ $mobile:539px;
             >h1 a {
                 position: absolute;
                 top: 50%;
-                left: 0px;
+                left: 100px;
                 transform: translateY(-50%);
-                font-size: 30px;
+                font-size: 20px;
                 color: #BE8263;
             }
         }
 
         .menuWeb {
+            position: absolute;
+            top: 50%;
+            right: 50px;
+            transform: translateY(-50%);
+
             #gnb {
-                position: absolute;
-                bottom: 0;
-                left: 25%;
+                margin-right: 70px;
                 &::after {
                     content: '';
                     display: block;
@@ -143,12 +144,11 @@ $mobile:539px;
                     float: left;
 
                     a {
-                        height: 60px;
                         position: relative;
                         display: block;
-                        padding: 0px 30px;
+                        padding: 0px 10px;
                         color: #111;
-                        font: bold 12px/1;
+                        font: bold 12px/1 'Georama';
                         transition: 0.5s;
 
                         &::after {
