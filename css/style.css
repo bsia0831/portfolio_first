@@ -1707,9 +1707,7 @@ a {
   overflow: visible;
   z-index: 99;
   position: relative;
-  background-color: #faf5f2;
-  float: left;
-  border: 1px solid #111; }
+  float: left; }
   #header .inner {
     width: 100%;
     height: 100px;
@@ -1972,29 +1970,39 @@ a {
   width: 35%;
   height: 100vh;
   float: left;
-  border: 1px solid #111;
   position: relative; }
   .right-visual .inner article {
-    border: 1px solid #111;
     float: left; }
     .right-visual .inner article:nth-child(1) {
       width: 80%;
-      height: 55vh; }
+      height: 55vh;
+      background-image: url(../img/main_visual4.jpg);
+      background-position: center;
+      background-size: cover; }
     .right-visual .inner article:nth-child(2) {
       width: 20%;
-      height: 55vh; }
+      height: 55vh;
+      writing-mode: vertical-lr;
+      text-align: center; }
+      .right-visual .inner article:nth-child(2) h4 {
+        display: inline;
+        margin: 0 auto;
+        line-height: 90px;
+        letter-spacing: 1px;
+        font-size: 13px; }
+        .right-visual .inner article:nth-child(2) h4:first-child {
+          margin-bottom: 100px; }
     .right-visual .inner article:nth-child(3) {
       width: 100%;
-      height: 45vh; }
+      height: 45vh;
+      background-color: #f8ebe3; }
 
 .left-visual {
   width: 65%;
   height: 100vh;
-  border: 1px solid #111;
   position: relative; }
   .left-visual article {
-    width: 100%;
-    border: 1px solid #111; }
+    width: 100%; }
     .left-visual article:nth-child(1) {
       height: 70vh; }
     .left-visual article:nth-child(2) {
