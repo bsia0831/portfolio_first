@@ -517,16 +517,33 @@ $mobile:539px;
 
                     &:nth-of-type(3){
                         font: lighter 12px/1.3 'Heebo'; letter-spacing: 1px;
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
                     }
-                    a{
-                        width: 20%;
-                        font: 20px/1 'Heebo'; letter-spacing: 1px;
-                        border-bottom: 1px solid #111; color: #111;
-                    }
+                    
+                }
 
-                    .icons{
+                .detail{
+                    float: left;
+                    position: relative;
+                    display: block;
+                    width: 25%; height: 30px;
+                    font: 13px/30px 'Heebo'; color: #111;
+                    letter-spacing: 2px;
+                    border-bottom: 2px solid #000;
+                    margin-right: 200px;
+                }
+
+                .icons{
+                    float: left;
+                    position: relative;
+                    margin-top: 5px;
+                    li{
                         float: left;
+                        margin-right: 20px;
+                        color: #111;
+                        a{
+                            color: #111;
+                        }
                     }
                 }
             }
