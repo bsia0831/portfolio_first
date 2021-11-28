@@ -2321,7 +2321,7 @@ section {
         text-align: left;
         margin-top: 12px; }
   section#banner {
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/main_visual_left.png) no-repeat center/cover fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/banner.jpg) no-repeat bottom/cover fixed;
     height: 370px; }
     section#banner .inner {
       width: 100%; }
