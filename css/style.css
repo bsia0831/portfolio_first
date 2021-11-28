@@ -1994,7 +1994,7 @@ a {
       width: 100%;
       position: relative; }
       .left-visual .inner article:nth-child(1) {
-        height: 70vh; }
+        height: 60vh; }
         .left-visual .inner article:nth-child(1) h5 {
           font: lighter 20px/1 'Heebo';
           letter-spacing: 2px;
@@ -2002,7 +2002,7 @@ a {
           top: 30%;
           left: 11%; }
         .left-visual .inner article:nth-child(1) h4 {
-          font: 50px/1.3 'Fraunces';
+          font: 50px/1.1 'Fraunces';
           color: #BE8263;
           letter-spacing: 1px;
           position: absolute;
@@ -2029,7 +2029,7 @@ a {
             margin-right: 25px;
             color: #BE8263; }
       .left-visual .inner article:nth-child(2) {
-        height: 30vh;
+        height: 40vh;
         background-image: url(../img/main_visual2.jpg);
         background-position: center;
         background-size: cover; }
@@ -2066,7 +2066,7 @@ a {
       width: 100%;
       height: 45vh;
       background-color: #f8ebe3;
-      padding: 50px; }
+      padding: 10%; }
       .right-visual .inner article:nth-child(3) h5:nth-of-type(1) {
         font: 15px/1 'Heebo';
         letter-spacing: 1px;
