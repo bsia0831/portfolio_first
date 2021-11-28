@@ -711,57 +711,68 @@ section {
                 article{
                     display: block;
                     float: left;
-                    width: calc(100%/3); background-color: rgba(0, 0, 0, 0.5);
-                    padding: 60px 50px;
+                    width: calc(100%/3);
+                    height: 300px;
                     text-align: left;
-                    background-size: cover;
-                    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
                     cursor: pointer;
+                    position: relative;
 
-                    h3{
-                        font: 32px/1 'Fraunces'; color: #fff;
-                        margin-bottom: 40px;
+                    &::before{
+                        content: '';
+                        width: 100%; height: 100%;
+                        background-position: center;
+                        background-size: cover;
+                        position: absolute;
+                        filter: brightness(0.5);
                     }
 
-                    p{
-                        font: lighter 15px/1.5 'Inconsolata'; color: #fff;
-                        margin-bottom: 20px;
+                    video{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: 1s;
+                        filter: brightness(0.8);
+                        opacity: 0;
                     }
 
-                    a{
-                        margin: 0;
-                    }
-
-                    &:nth-of-type(1){
-                        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/brand2.jpg);
-
-                        &:hover{
-                            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/brand2.jpg);
-                            p{
-                                transform: translateY(-20px);
-                            }
+                    &:hover{
+                        video{
+                            opacity: 1;
                         }
                     }
 
-                    &:nth-of-type(2){
-                        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/brand1.jpg);
+                    .video-text{
+                        position: absolute;
+                        top: 0; left: 0;
+                        width: 100%;
+                        z-index: 99;
+                        padding: 45px 30px;
                         
-                        &:hover{
-                            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/brand1.jpg);
-                            p{
-                                transform: translateY(-20px);
-                            }
+                        h3{
+                            font: 32px/1 'Fraunces'; color: #fff;
+                            margin-bottom: 40px;
+                        }
+    
+                        p{
+                            font: lighter 15px/1.5 'Inconsolata'; color: #fff;
+                            margin-bottom: 20px;
+                        }
+    
+                        a{
+                            margin: 0;
                         }
                     }
 
-                    &:nth-of-type(3){
-                        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/brand3.jpg);
-                        &:hover{
-                            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/brand3.jpg);
-                            p{
-                                transform: translateY(-20px);
-                            }
-                        }
+                    &:nth-of-type(1)::before{
+                        background-image: url(../img/brand1.png);
+                    }
+
+                    &:nth-of-type(2)::before{
+                        background-image: url(../img/brand2.png);
+                    }
+
+                    &:nth-of-type(3)::before{
+                        background-image: url(../img/brand3.png);
                     }
 
                     a{
