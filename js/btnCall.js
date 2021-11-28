@@ -20,7 +20,7 @@ closeBtn.onclick = function(e){
 
 //마우스 호버시 2depth 활성화 
 $("#gnb>li").off("mouseenter").on("mouseenter", function(){
-    $(this).find(".sub").slideDown(); 
+    $(this).find(".sub").show(); 
 });
 
 $("#gnb>li").on("mouseleave", function(){
