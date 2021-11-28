@@ -1751,7 +1751,7 @@ a {
           #header .inner .menuWeb #gnb li a {
             position: relative;
             display: block;
-            padding: 0px 10px;
+            margin: 20px 10px;
             color: #111;
             font: bold 12px/1 'Georama';
             transition: 0.5s; }
@@ -1767,8 +1767,8 @@ a {
               transition: all .3s ease; }
             #header .inner .menuWeb #gnb li a:hover::after {
               content: '';
-              width: 80%;
-              left: 6px;
+              width: 100%;
+              left: 0px;
               height: 1px;
               display: block;
               position: absolute;
@@ -1781,12 +1781,13 @@ a {
             width: 200%;
             height: 30vh;
             position: absolute;
-            top: 40px;
+            top: 50px;
             right: -10px;
             background: #fff;
             display: none;
             padding: 10px;
-            border-top: 2px solid #8f431d; }
+            border-top: 2px solid #8f431d;
+            border-bottom: 2px solid #8f431d; }
             #header .inner .menuWeb #gnb li .sub .left {
               width: 50%;
               height: 100%;
@@ -1804,6 +1805,12 @@ a {
                 float: none; }
                 #header .inner .menuWeb #gnb li .sub .right ul li a {
                   font: 20px/2 'Heebo'; }
+                  #header .inner .menuWeb #gnb li .sub .right ul li a::after {
+                    display: none; }
+                  #header .inner .menuWeb #gnb li .sub .right ul li a:hover {
+                    transform: translateX(3%); }
+                #header .inner .menuWeb #gnb li .sub .right ul li:first-child {
+                  margin-top: -10px; }
           #header .inner .menuWeb #gnb li .mem .left {
             background-image: url(../img/sub6.jpg); }
           #header .inner .menuWeb #gnb li .com .left {

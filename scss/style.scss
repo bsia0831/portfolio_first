@@ -154,7 +154,7 @@ $mobile:539px;
                     a {
                         position: relative;
                         display: block;
-                        padding: 0px 10px;
+                        margin: 20px 10px;
                         color: #111;
                         font: bold 12px/1 'Georama';
                         transition: 0.5s;
@@ -173,8 +173,8 @@ $mobile:539px;
 
                         &:hover::after {
                             content: '';
-                            width: 80%;
-                            left: 6px;
+                            width: 100%;
+                            left: 0px;
                             height: 1px;
                             display: block;
                             position: absolute;
@@ -194,12 +194,13 @@ $mobile:539px;
                         width:200%; 
                         height:30vh; 
                         position:absolute;  
-                        top:40px; 
+                        top: 50px; 
                         right:-10px;   
                         background:#fff; 
-                        display:none; 
+                        display:none;
                         padding: 10px;
                         border-top: 2px solid #8f431d;
+                        border-bottom: 2px solid #8f431d;
 
                         
 
@@ -221,6 +222,15 @@ $mobile:539px;
                                     a{
                                         font: 20px/2 'Heebo';
                                         
+                                        &::after{
+                                            display: none;
+                                        }
+                                        &:hover{
+                                            transform: translateX(3%);
+                                        }
+                                    }
+                                    &:first-child{
+                                        margin-top: -10px;
                                     }
                                 }
                             }
