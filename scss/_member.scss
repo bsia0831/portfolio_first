@@ -4,9 +4,9 @@
 
 .values{
     width: 100%;
-    background-image: url(../img/member_banner.png);
+    background-image: url(../img/member_banner.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     .inner{
         width: 1180px;
@@ -17,7 +17,7 @@
             width: 100%;
             >h2{
                 font: bold 50px/1 'Fraunces';
-                letter-spacing: 1px; color: #BE8464;
+                letter-spacing: 1px; color: #fff;
                 text-align: center;
             }
         }
