@@ -1996,7 +1996,7 @@ a {
       .left-visual .inner article:nth-child(1) {
         height: 60vh; }
         .left-visual .inner article:nth-child(1) h5 {
-          font: lighter 20px/1 'Heebo';
+          font: 20px/1 'Heebo';
           letter-spacing: 2px;
           position: absolute;
           top: 30%;
@@ -2010,7 +2010,7 @@ a {
           left: 11%; }
         .left-visual .inner article:nth-child(1) p {
           width: 50%;
-          font: lighter 12px/1.3 'Heebo';
+          font: 12px/1.3 'Heebo';
           letter-spacing: 1px;
           position: absolute;
           top: 63%;
@@ -2030,7 +2030,7 @@ a {
             color: #BE8263; }
       .left-visual .inner article:nth-child(2) {
         height: 40vh;
-        background-image: url(../img/main_visual2.jpg);
+        background-image: url(../img/main_visual.jpg);
         background-position: center;
         background-size: cover; }
 
@@ -2076,7 +2076,7 @@ a {
         letter-spacing: 2px;
         margin-bottom: 20px; }
       .right-visual .inner article:nth-child(3) h5:nth-of-type(3) {
-        font: lighter 12px/1.3 'Heebo';
+        font: 12px/1.3 'Heebo';
         letter-spacing: 1px;
         margin-bottom: 30px; }
       .right-visual .inner article:nth-child(3) .icons {
@@ -2191,7 +2191,7 @@ section {
               color: #fff;
               margin-bottom: 40px; }
             section#brand .inner .wrap article .video-text p {
-              font: lighter 15px/1.5 'Inconsolata';
+              font: 15px/1.5 'Inconsolata';
               color: #fff;
               margin-bottom: 20px; }
             section#brand .inner .wrap article .video-text a {
@@ -2262,7 +2262,7 @@ section {
             letter-spacing: 2px;
             margin-bottom: 28px; }
           section#history .inner .wrap article .over h4 {
-            font: lighter 16px/1 'Inconsolata'; }
+            font: 16px/1 'Inconsolata'; }
         section#history .inner .wrap article:nth-child(1) {
           background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url(../img/history1.jpg);
           background-size: cover; }
@@ -2290,7 +2290,7 @@ section {
     text-align: center;
     padding-bottom: 100px; }
     section#crew .inner .crew_txt p {
-      font: lighter 40px/1 'Ephesis';
+      font: 40px/1 'Ephesis';
       color: #C28D72; }
     section#crew .inner .crew_txt h2 {
       font: 30px/1 'Fraunces'; }
